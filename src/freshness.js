@@ -92,6 +92,9 @@ export const MAX_AGE_MIN = {
   // afternoon, long enough that the current week and ROS board are not
   // re-pulled every live poll.
   draftsharks: 45,
+  // VegasEdge regenerates its boards on a published schedule of 2-5 slots a
+  // day (/config `inseason_schedule`); an hour catches each slot.
+  vegas: 60,
   // The NFL schedule is fixed for the season, and the sync fetches only weeks
   // it does not have yet, so this is just how often to retry a missing week.
   schedule: 7 * 24 * 60,

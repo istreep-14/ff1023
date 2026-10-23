@@ -92,7 +92,13 @@ test('line levels: a summary with failures is an error, with none it is ok', () 
  * An old bookmark's key now reads as this week rather than as an empty page.
  */
 test('the window is this week, rest of season or full season — old keys fall back to this week', () => {
-  assert.deepEqual(horizonOptions({ now: 7 }).map((o) => o.value), ['w-7', 'ros', 'szn']);
+  assert.deepEqual(horizonOptions({ now: 7 }).map((o) => o.value), ['ovw', 'w-7', 'ros', 'szn', 'l3', 'l5', 'std']);
+  // Game-log windows read completed weeks only, and do not exist before one is played.
+  assert.deepEqual(horizonOptions({ now: 1 }).map((o) => o.value), ['ovw', 'w-1', 'ros', 'szn']);
+  assert.deepEqual([parseHorizon('l3', { now: 7 }).from, parseHorizon('l3', { now: 7 }).to], [4, 6]);
+  assert.deepEqual([parseHorizon('l5', { now: 3 }).from, parseHorizon('l5', { now: 3 }).to], [1, 2]);
+  assert.deepEqual([parseHorizon('std', { now: 7 }).from, parseHorizon('std', { now: 7 }).to], [1, 6]);
+  assert.equal(parseHorizon('ovw', { now: 7 }).kind, 'overview');
   for (const old of ['n-3', 'p', 'w-12', 'r-3-5', 'playoffs', '']) {
     assert.equal(parseHorizon(old, { now: 7 }).key, 'w-7', old);
   }

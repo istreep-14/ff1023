@@ -70,6 +70,8 @@ export const config = {
   // logged-in session sees the full board. Optional — projections scraping
   // degrades to that top-10-per-position slice when unset.
   fpCookie: process.env.FP_COOKIE || '',
+  // VegasEdgeFantasy session cookie (a JWT, ~30 days). Separate site, separate login.
+  vegasToken: process.env.VEGAS_TOKEN || '',
 };
 
 export function requireEmail() {

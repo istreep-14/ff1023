@@ -35,6 +35,12 @@
  */
 
 const FEED_POS = ['qb', 'rb', 'wr', 'te', 'k', 'dst'];
+/** VegasEdge's TdMethod in words (src/vegas.js TD_METHOD; this file is inlined and imports nothing). */
+export const FEED_TD_METHOD = {
+  tds_over_ladder_per_book: 'Each book’s ladder',
+  tds_over_ladder: 'Averaged ladder',
+  poisson_from_anytime_fallback: 'Anytime price only',
+};
 /** "WR12" -> 12: FantasyPros publishes a position rank as text. */
 const feedPosNum = (v) => Number(String(v ?? '').replace(/[^0-9]/g, '')) || null;
 const feedBoards = (dir) => `${dir}/{${FEED_POS.join(',')}}.json`;
@@ -222,6 +228,55 @@ export const FEED_SITES = [
           { key: 'ds.inj', label: 'Inj risk', kind: 'pct', get: (r) => r.ds?.inj },
         ],
         sort: 'ds.val',
+      },
+    ],
+  },
+  {
+    id: 'vegas', label: 'VegasEdge', host: 'vegasedgefantasy.com', section: 'Projections & rankings',
+    about: 'Sportsbook player props turned into this week’s projection, and the site’s 10K-sample simulation around it. Current week only; QB, RB, WR and TE.',
+    feeds: [
+      {
+        key: 'week', label: 'Week projections', ledger: 'vegas',
+        files: (c) => [`vegas/${c.season}/week-${c.week}.json · players (qb + flex rankings)`],
+        about: 'Points are scored here from the expected stat line at this format, not read off the board: the site’s own figure follows one scoring setting any visitor can change. A partial market (a missing prop) keeps its points but is not ranked.',
+        has: (r) => r.vg?.wk != null,
+        cols: () => [
+          { key: 'vg.prk', label: 'Pos Rk', kind: 'pos', get: (r) => r.vg?.prk, title: 'By points, among complete markets only.' },
+          { key: 'vg.wk', label: 'Proj', kind: 'num', d: 1, get: (r) => r.vg?.wk },
+          { key: 'vg.ok', label: 'Market', kind: 'text', get: (r) => (r.vg ? (r.vg.ok ? 'complete' : 'missing ' + (r.vg.miss || ['odds']).join(', ')) : null) },
+          { key: 'vg.vol', label: 'Tag', kind: 'text', get: (r) => r.vg?.vol, title: 'The site’s volatility tag: this week’s priced range against his position peers — High Floor narrower, Volatile wider, Balanced typical. Only simulated players get one.' },
+        ],
+        sort: 'vg.wk',
+      },
+      {
+        key: 'dist', label: 'Distribution', ledger: 'vegas',
+        files: (c) => [`vegas/${c.season}/week-${c.week}.json · players.*.dist (boombust batch)`],
+        about: 'Percentiles of the site’s 10K-sample simulation, at this format. Skew is upside room (p90 − p50) against downside (p50 − p10): +1 all upside, −1 all downside. Players with too thin a market are not simulated.',
+        has: (r) => r.vg?.md != null,
+        cols: () => [
+          { key: 'vg.fl', label: 'Floor (p10)', kind: 'num', d: 1, get: (r) => r.vg?.fl },
+          { key: 'vg.md', label: 'Median', kind: 'num', d: 1, get: (r) => r.vg?.md },
+          { key: 'vg.ce', label: 'Ceiling (p90)', kind: 'num', d: 1, get: (r) => r.vg?.ce },
+          { key: 'vg.boom', label: 'Boom', kind: 'pct', get: (r) => (r.vg?.boom != null ? r.vg.boom * 100 : null), title: 'Simulated games over 135% of his projection.' },
+          { key: 'vg.bust', label: 'Bust', kind: 'pct', get: (r) => (r.vg?.bust != null ? r.vg.bust * 100 : null), title: 'Simulated games under 50% of his projection.' },
+          { key: 'vg.sk', label: 'Skew', kind: 'num', d: 2, get: (r) => r.vg?.sk },
+        ],
+        sort: 'vg.md',
+      },
+      {
+        key: 'stats', label: 'Stat line', ledger: 'vegas',
+        files: (c) => [`vegas/${c.season}/week-${c.week}.json · players.*.st`],
+        about: 'The expected stat line the props imply — what the projection is scored from.',
+        has: (r) => !!r.vg?.st,
+        cols: () => [
+          { key: 'vg.wk', label: 'Proj', kind: 'num', d: 1, get: (r) => r.vg?.wk },
+          ...[['passYds', 'Pass Yds', 1], ['passTds', 'Pass TD', 2], ['ints', 'Int', 2], ['rushYds', 'Rush Yds', 1], ['rushTds', 'Rush TD', 2],
+            ['rec', 'Rec', 1], ['recYds', 'Rec Yds', 1], ['tds', 'TDs', 2], ['tdProb', 'TD prob', 2]]
+            .map(([k, label, d]) => ({ key: `vg.st.${k}`, label, kind: 'num', d, get: (r) => r.vg?.st?.[k] ?? null })),
+          { key: 'vg.tdm', label: 'TD source', kind: 'text', get: (r) => (r.vg?.tdm ? FEED_TD_METHOD[r.vg.tdm] || r.vg.tdm : null),
+            title: 'How the expected TDs were priced, strongest first: each book’s 1+/2+/3+ TD ladder, the ladder averaged across books, or a Poisson guess off the anytime-TD price alone.' },
+        ],
+        sort: 'vg.wk',
       },
     ],
   },

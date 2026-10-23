@@ -6,26 +6,30 @@
     24,
     72
   ],
-  "fetchedAt": "2026-10-21T03:36:45.368Z",
+  "fetchedAt": "2026-10-22T08:38:48.007Z",
   "players": [
     {
-      "sleeperId": "13276",
-      "name": "Omar Cooper",
-      "position": "WR",
-      "team": "NYJ",
+      "sleeperId": "10235",
+      "name": "Roschon Johnson",
+      "position": "RB",
+      "team": "CHI",
       "injuryStatus": null,
       "adds": {
-        "h6": 1867176,
-        "h24": 4875760,
-        "h72": 6133800
+        "h6": 163504,
+        "h24": 988616,
+        "h72": 1812960
       },
-      "drops": {},
-      "addCount": 4875760,
-      "dropCount": null,
-      "net": 4875760,
-      "ratio": 1.86,
-      "recentPerHr": 311196,
-      "priorPerHr": 167143.6,
+      "drops": {
+        "h6": 6632,
+        "h24": 96360,
+        "h72": 216288
+      },
+      "addCount": 988616,
+      "dropCount": 96360,
+      "net": 892256,
+      "ratio": 0.59,
+      "recentPerHr": 27250.7,
+      "priorPerHr": 45839.6,
       "fresh": false
     },
     {
@@ -35,17 +39,37 @@
       "team": "CLE",
       "injuryStatus": null,
       "adds": {
-        "h6": 572292,
-        "h24": 1820616,
-        "h72": 2188333
+        "h6": 49889,
+        "h24": 802361,
+        "h72": 3147004
       },
       "drops": {},
-      "addCount": 1820616,
+      "addCount": 802361,
       "dropCount": null,
-      "net": 1820616,
-      "ratio": 1.38,
-      "recentPerHr": 95382,
-      "priorPerHr": 69351.3,
+      "net": 802361,
+      "ratio": 0.2,
+      "recentPerHr": 8314.8,
+      "priorPerHr": 41804,
+      "fresh": false
+    },
+    {
+      "sleeperId": "13276",
+      "name": "Omar Cooper Jr.",
+      "position": "WR",
+      "team": "NYJ",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 46096,
+        "h24": 700744,
+        "h72": 7322800
+      },
+      "drops": {},
+      "addCount": 700744,
+      "dropCount": null,
+      "net": 700744,
+      "ratio": 0.21,
+      "recentPerHr": 7682.7,
+      "priorPerHr": 36369.3,
       "fresh": false
     },
     {
@@ -55,163 +79,21 @@
       "team": "LAR",
       "injuryStatus": null,
       "adds": {
-        "h6": 545922,
-        "h24": 1357992,
-        "h72": 1521216
-      },
-      "drops": {},
-      "addCount": 1357992,
-      "dropCount": null,
-      "net": 1357992,
-      "ratio": 2.02,
-      "recentPerHr": 90987,
-      "priorPerHr": 45115,
-      "fresh": false
-    },
-    {
-      "sleeperId": "5849",
-      "name": "Kyler Murray",
-      "position": "QB",
-      "team": "MIN",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 230656,
-        "h24": 910888,
-        "h72": 1014160
+        "h6": 42075,
+        "h24": 567666,
+        "h72": 2344086
       },
       "drops": {
-        "h72": 125952
+        "h6": 10566,
+        "h24": 89784,
+        "h72": 129393
       },
-      "addCount": 910888,
-      "dropCount": null,
-      "net": 910888,
-      "ratio": 1.02,
-      "recentPerHr": 38442.7,
-      "priorPerHr": 37790.7,
-      "fresh": false
-    },
-    {
-      "sleeperId": "9758",
-      "name": "C.J. Stroud",
-      "position": "QB",
-      "team": "HOU",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 234682,
-        "h24": 710185,
-        "h72": 1058484
-      },
-      "drops": {},
-      "addCount": 710185,
-      "dropCount": null,
-      "net": 710185,
-      "ratio": 1.48,
-      "recentPerHr": 39113.7,
-      "priorPerHr": 26416.8,
-      "fresh": false
-    },
-    {
-      "sleeperId": "9482",
-      "name": "Michael Mayer",
-      "position": "TE",
-      "team": "LV",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 241218,
-        "h24": 692577,
-        "h72": 946503
-      },
-      "drops": {},
-      "addCount": 692577,
-      "dropCount": null,
-      "net": 692577,
-      "ratio": 1.6,
-      "recentPerHr": 40203,
-      "priorPerHr": 25075.5,
-      "fresh": false
-    },
-    {
-      "sleeperId": "10235",
-      "name": "Roschon Johnson",
-      "position": "RB",
-      "team": "CHI",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 240992,
-        "h24": 579280,
-        "h72": 1014688
-      },
-      "drops": {
-        "h6": 21992,
-        "h24": 94528,
-        "h72": 162032
-      },
-      "addCount": 579280,
-      "dropCount": 94528,
-      "net": 484752,
-      "ratio": 2.14,
-      "recentPerHr": 40165.3,
-      "priorPerHr": 18793.8,
-      "fresh": false
-    },
-    {
-      "sleeperId": "11655",
-      "name": "Tyrone Tracy",
-      "position": "RB",
-      "team": "NYG",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 208284,
-        "h24": 546040,
-        "h72": 650486
-      },
-      "drops": {},
-      "addCount": 546040,
-      "dropCount": null,
-      "net": 546040,
-      "ratio": 1.85,
-      "recentPerHr": 34714,
-      "priorPerHr": 18764.2,
-      "fresh": false
-    },
-    {
-      "sleeperId": "12487",
-      "name": "Terrance Ferguson",
-      "position": "TE",
-      "team": "LAR",
-      "injuryStatus": "IR",
-      "adds": {
-        "h6": 161648,
-        "h24": 525696,
-        "h72": 598592
-      },
-      "drops": {},
-      "addCount": 525696,
-      "dropCount": null,
-      "net": 525696,
-      "ratio": 1.33,
-      "recentPerHr": 26941.3,
-      "priorPerHr": 20224.9,
-      "fresh": false
-    },
-    {
-      "sleeperId": "9502",
-      "name": "Tank Dell",
-      "position": "WR",
-      "team": "HOU",
-      "injuryStatus": "IR",
-      "adds": {
-        "h6": 124488,
-        "h24": 518464,
-        "h72": 756664
-      },
-      "drops": {},
-      "addCount": 518464,
-      "dropCount": null,
-      "net": 518464,
-      "ratio": 0.95,
-      "recentPerHr": 20748,
-      "priorPerHr": 21887.6,
+      "addCount": 567666,
+      "dropCount": 89784,
+      "net": 477882,
+      "ratio": 0.24,
+      "recentPerHr": 7012.5,
+      "priorPerHr": 29199.5,
       "fresh": false
     },
     {
@@ -221,40 +103,44 @@
       "team": "TB",
       "injuryStatus": null,
       "adds": {
-        "h6": 141040,
-        "h24": 500976,
-        "h72": 588520
+        "h6": 44152,
+        "h24": 551024,
+        "h72": 1186560
       },
       "drops": {
-        "h6": 15408,
-        "h24": 57504
+        "h6": 4432,
+        "h24": 46160,
+        "h72": 124864
       },
-      "addCount": 500976,
-      "dropCount": 57504,
-      "net": 443472,
-      "ratio": 1.18,
-      "recentPerHr": 23506.7,
-      "priorPerHr": 19996.4,
+      "addCount": 551024,
+      "dropCount": 46160,
+      "net": 504864,
+      "ratio": 0.26,
+      "recentPerHr": 7358.7,
+      "priorPerHr": 28159.6,
       "fresh": false
     },
     {
-      "sleeperId": "MIN",
-      "name": "Minnesota Vikings",
-      "position": "DEF",
-      "team": "MIN",
+      "sleeperId": "9482",
+      "name": "Michael Mayer",
+      "position": "TE",
+      "team": "LV",
       "injuryStatus": null,
       "adds": {
-        "h6": 146725,
-        "h24": 474260,
-        "h72": 568285
+        "h6": 47295,
+        "h24": 483408,
+        "h72": 1443456
       },
-      "drops": {},
-      "addCount": 474260,
-      "dropCount": null,
-      "net": 474260,
-      "ratio": 1.34,
-      "recentPerHr": 24454.2,
-      "priorPerHr": 18196.4,
+      "drops": {
+        "h6": 8451,
+        "h24": 75411
+      },
+      "addCount": 483408,
+      "dropCount": 75411,
+      "net": 407997,
+      "ratio": 0.33,
+      "recentPerHr": 7882.5,
+      "priorPerHr": 24228.5,
       "fresh": false
     },
     {
@@ -264,186 +150,45 @@
       "team": "DET",
       "injuryStatus": null,
       "adds": {
-        "h6": 133576,
-        "h24": 471968,
-        "h72": 504944
+        "h6": 31704,
+        "h24": 449256,
+        "h72": 1000000
       },
       "drops": {
-        "h24": 52424,
-        "h72": 236208
+        "h6": 5256,
+        "h24": 53656,
+        "h72": 133688
       },
-      "addCount": 471968,
-      "dropCount": 52424,
-      "net": 419544,
-      "ratio": 1.18,
-      "recentPerHr": 22262.7,
-      "priorPerHr": 18799.6,
+      "addCount": 449256,
+      "dropCount": 53656,
+      "net": 395600,
+      "ratio": 0.23,
+      "recentPerHr": 5284,
+      "priorPerHr": 23197.3,
       "fresh": false
     },
     {
-      "sleeperId": "10213",
-      "name": "Tre Tucker",
-      "position": "WR",
-      "team": "LV",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 148212,
-        "h24": 444960,
-        "h72": 736830
-      },
-      "drops": {},
-      "addCount": 444960,
-      "dropCount": null,
-      "net": 444960,
-      "ratio": 1.5,
-      "recentPerHr": 24702,
-      "priorPerHr": 16486,
-      "fresh": false
-    },
-    {
-      "sleeperId": "8135",
-      "name": "Treylon Burks",
-      "position": "WR",
-      "team": "WAS",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 200977,
-        "h24": 428554,
-        "h72": 458255
-      },
-      "drops": {},
-      "addCount": 428554,
-      "dropCount": null,
-      "net": 428554,
-      "ratio": 2.65,
-      "recentPerHr": 33496.2,
-      "priorPerHr": 12643.2,
-      "fresh": false
-    },
-    {
-      "sleeperId": "NYJ",
-      "name": "New York Jets",
-      "position": "DEF",
-      "team": "NYJ",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 146440,
-        "h24": 412616,
-        "h72": 477996
-      },
-      "drops": {},
-      "addCount": 412616,
-      "dropCount": null,
-      "net": 412616,
-      "ratio": 1.65,
-      "recentPerHr": 24406.7,
-      "priorPerHr": 14787.6,
-      "fresh": false
-    },
-    {
-      "sleeperId": "7553",
-      "name": "Kyle Pitts",
-      "position": "TE",
-      "team": "ATL",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 142352,
-        "h24": 382991,
-        "h72": 694085
-      },
-      "drops": {},
-      "addCount": 382991,
-      "dropCount": null,
-      "net": 382991,
-      "ratio": 1.77,
-      "recentPerHr": 23725.3,
-      "priorPerHr": 13368.8,
-      "fresh": false
-    },
-    {
-      "sleeperId": "11792",
-      "name": "Will Reichard",
-      "position": "K",
+      "sleeperId": "5849",
+      "name": "Kyler Murray",
+      "position": "QB",
       "team": "MIN",
       "injuryStatus": null,
       "adds": {
-        "h6": 115482,
-        "h24": 376923,
-        "h72": 435399
-      },
-      "drops": {},
-      "addCount": 376923,
-      "dropCount": null,
-      "net": 376923,
-      "ratio": 1.33,
-      "recentPerHr": 19247,
-      "priorPerHr": 14524.5,
-      "fresh": false
-    },
-    {
-      "sleeperId": "9230",
-      "name": "Tanner McKee",
-      "position": "QB",
-      "team": "PHI",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 93592,
-        "h24": 252512,
-        "h72": 474776
+        "h6": 27016,
+        "h24": 373840,
+        "h72": 1459416
       },
       "drops": {
-        "h72": 104440
+        "h6": 6576,
+        "h24": 70624,
+        "h72": 127928
       },
-      "addCount": 252512,
-      "dropCount": null,
-      "net": 252512,
-      "ratio": 1.77,
-      "recentPerHr": 15598.7,
-      "priorPerHr": 8828.9,
-      "fresh": false
-    },
-    {
-      "sleeperId": "8116",
-      "name": "Pierre Strong",
-      "position": "RB",
-      "team": "GB",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 87201,
-        "h24": 223551,
-        "h72": 338490
-      },
-      "drops": {},
-      "addCount": 223551,
-      "dropCount": null,
-      "net": 223551,
-      "ratio": 1.92,
-      "recentPerHr": 14533.5,
-      "priorPerHr": 7575,
-      "fresh": false
-    },
-    {
-      "sleeperId": "11610",
-      "name": "Malik Washington",
-      "position": "WR",
-      "team": "MIA",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 88264,
-        "h24": 219696,
-        "h72": 256168
-      },
-      "drops": {
-        "h6": 26328,
-        "h24": 86712,
-        "h72": 241600
-      },
-      "addCount": 219696,
-      "dropCount": 86712,
-      "net": 132984,
-      "ratio": 2.01,
-      "recentPerHr": 14710.7,
-      "priorPerHr": 7301.8,
+      "addCount": 373840,
+      "dropCount": 70624,
+      "net": 303216,
+      "ratio": 0.23,
+      "recentPerHr": 4502.7,
+      "priorPerHr": 19268,
       "fresh": false
     },
     {
@@ -453,145 +198,148 @@
       "team": "LAR",
       "injuryStatus": null,
       "adds": {
-        "h6": 110052,
-        "h24": 206766,
-        "h72": 1194435
+        "h6": 36288,
+        "h24": 337068,
+        "h72": 644598
       },
       "drops": {
-        "h6": 116667,
-        "h24": 464103,
-        "h72": 781821
+        "h6": 16479,
+        "h24": 207468,
+        "h72": 897732
       },
-      "addCount": 206766,
-      "dropCount": 464103,
-      "net": -257337,
-      "ratio": 3.41,
-      "recentPerHr": 18342,
-      "priorPerHr": 5373,
+      "addCount": 337068,
+      "dropCount": 207468,
+      "net": 129600,
+      "ratio": 0.36,
+      "recentPerHr": 6048,
+      "priorPerHr": 16710,
       "fresh": false
     },
     {
-      "sleeperId": "11783",
-      "name": "Ryan Flournoy",
-      "position": "WR",
-      "team": "DAL",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 64896,
-        "h24": 205608,
-        "h72": 470840
-      },
-      "drops": {
-        "h6": 19912,
-        "h24": 56416,
-        "h72": 115424
-      },
-      "addCount": 205608,
-      "dropCount": 56416,
-      "net": 149192,
-      "ratio": 1.38,
-      "recentPerHr": 10816,
-      "priorPerHr": 7817.3,
-      "fresh": false
-    },
-    {
-      "sleeperId": "HOU",
-      "name": "Houston Texans",
-      "position": "DEF",
+      "sleeperId": "9758",
+      "name": "C.J. Stroud",
+      "position": "QB",
       "team": "HOU",
       "injuryStatus": null,
       "adds": {
-        "h6": 61970,
-        "h24": 200835,
-        "h72": 235640
+        "h6": 29036,
+        "h24": 327894,
+        "h72": 1334095
       },
       "drops": {},
-      "addCount": 200835,
+      "addCount": 327894,
       "dropCount": null,
-      "net": 200835,
-      "ratio": 1.34,
-      "recentPerHr": 10328.3,
-      "priorPerHr": 7714.7,
+      "net": 327894,
+      "ratio": 0.29,
+      "recentPerHr": 4839.3,
+      "priorPerHr": 16603.2,
       "fresh": false
     },
     {
-      "sleeperId": "11586",
-      "name": "Blake Corum",
-      "position": "RB",
-      "team": "LAR",
+      "sleeperId": "8135",
+      "name": "Treylon Burks",
+      "position": "WR",
+      "team": "WAS",
       "injuryStatus": null,
       "adds": {
-        "h6": 65584,
-        "h24": 184328,
-        "h72": 300792
+        "h6": 29337,
+        "h24": 310548,
+        "h72": 863156
       },
-      "drops": {},
-      "addCount": 184328,
-      "dropCount": null,
-      "net": 184328,
-      "ratio": 1.66,
-      "recentPerHr": 10930.7,
-      "priorPerHr": 6596.9,
+      "drops": {
+        "h6": 5348,
+        "h24": 44989
+      },
+      "addCount": 310548,
+      "dropCount": 44989,
+      "net": 265559,
+      "ratio": 0.31,
+      "recentPerHr": 4889.5,
+      "priorPerHr": 15622.8,
       "fresh": false
     },
     {
-      "sleeperId": "8408",
-      "name": "Jordan Mason",
-      "position": "RB",
-      "team": "MIN",
-      "injuryStatus": "IR",
+      "sleeperId": "NYJ",
+      "name": "New York Jets",
+      "position": "DEF",
+      "team": "NYJ",
+      "injuryStatus": null,
       "adds": {
-        "h6": 101950,
-        "h24": 181845,
-        "h72": 218060
+        "h6": 17582,
+        "h24": 286336,
+        "h72": 819240
       },
       "drops": {},
-      "addCount": 181845,
+      "addCount": 286336,
       "dropCount": null,
-      "net": 181845,
-      "ratio": 3.83,
-      "recentPerHr": 16991.7,
-      "priorPerHr": 4438.6,
+      "net": 286336,
+      "ratio": 0.2,
+      "recentPerHr": 2930.3,
+      "priorPerHr": 14930.8,
       "fresh": false
     },
     {
-      "sleeperId": "11565",
-      "name": "J.J. McCarthy",
-      "position": "QB",
+      "sleeperId": "10213",
+      "name": "Tre Tucker",
+      "position": "WR",
+      "team": "LV",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 19770,
+        "h24": 233046,
+        "h72": 873396
+      },
+      "drops": {},
+      "addCount": 233046,
+      "dropCount": null,
+      "net": 233046,
+      "ratio": 0.28,
+      "recentPerHr": 3295,
+      "priorPerHr": 11848.7,
+      "fresh": false
+    },
+    {
+      "sleeperId": "11610",
+      "name": "Malik Washington",
+      "position": "WR",
+      "team": "MIA",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 19424,
+        "h24": 220880,
+        "h72": 500856
+      },
+      "drops": {
+        "h6": 5536,
+        "h24": 60264,
+        "h72": 196672
+      },
+      "addCount": 220880,
+      "dropCount": 60264,
+      "net": 160616,
+      "ratio": 0.29,
+      "recentPerHr": 3237.3,
+      "priorPerHr": 11192,
+      "fresh": false
+    },
+    {
+      "sleeperId": "11655",
+      "name": "Tyrone Tracy Jr.",
+      "position": "RB",
       "team": "NYG",
       "injuryStatus": null,
       "adds": {
-        "h6": 63846,
-        "h24": 176796,
-        "h72": 315393
+        "h6": 15658,
+        "h24": 208186,
+        "h72": 905156
       },
       "drops": {},
-      "addCount": 176796,
+      "addCount": 208186,
       "dropCount": null,
-      "net": 176796,
-      "ratio": 1.7,
-      "recentPerHr": 10641,
-      "priorPerHr": 6275,
-      "fresh": false
-    },
-    {
-      "sleeperId": "13274",
-      "name": "Germie Bernard",
-      "position": "WR",
-      "team": "PIT",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 62453,
-        "h24": 169805,
-        "h72": 244894
-      },
-      "drops": {},
-      "addCount": 169805,
-      "dropCount": null,
-      "net": 169805,
-      "ratio": 1.75,
-      "recentPerHr": 10408.8,
-      "priorPerHr": 5964,
+      "net": 208186,
+      "ratio": 0.24,
+      "recentPerHr": 2609.7,
+      "priorPerHr": 10696,
       "fresh": false
     },
     {
@@ -601,43 +349,111 @@
       "team": "DEN",
       "injuryStatus": null,
       "adds": {
-        "h6": 61170,
-        "h24": 166992,
-        "h72": 203544
+        "h6": 15108,
+        "h24": 190722,
+        "h72": 407814
       },
       "drops": {
-        "h6": 29700,
-        "h24": 105414,
-        "h72": 210642
+        "h6": 7476,
+        "h24": 75522,
+        "h72": 233142
       },
-      "addCount": 166992,
-      "dropCount": 105414,
-      "net": 61578,
-      "ratio": 1.73,
-      "recentPerHr": 10195,
-      "priorPerHr": 5879,
+      "addCount": 190722,
+      "dropCount": 75522,
+      "net": 115200,
+      "ratio": 0.26,
+      "recentPerHr": 2518,
+      "priorPerHr": 9756.3,
       "fresh": false
     },
     {
-      "sleeperId": "7021",
-      "name": "Rico Dowdle",
-      "position": "RB",
-      "team": "PIT",
-      "injuryStatus": null,
+      "sleeperId": "9502",
+      "name": "Tank Dell",
+      "position": "WR",
+      "team": "HOU",
+      "injuryStatus": "IR",
       "adds": {
-        "h6": 60735,
-        "h24": 157675,
-        "h72": 191725
+        "h6": 20312,
+        "h24": 173416,
+        "h72": 971888
       },
       "drops": {
-        "h72": 115475
+        "h6": 4472,
+        "h24": 45312
       },
-      "addCount": 157675,
+      "addCount": 173416,
+      "dropCount": 45312,
+      "net": 128104,
+      "ratio": 0.4,
+      "recentPerHr": 3385.3,
+      "priorPerHr": 8505.8,
+      "fresh": false
+    },
+    {
+      "sleeperId": "13296",
+      "name": "Caleb Douglas",
+      "position": "WR",
+      "team": "MIA",
+      "injuryStatus": "Questionable",
+      "adds": {
+        "h6": 9448,
+        "h24": 173416,
+        "h72": 385048
+      },
+      "drops": {
+        "h6": 6320,
+        "h24": 48600
+      },
+      "addCount": 173416,
+      "dropCount": 48600,
+      "net": 124816,
+      "ratio": 0.17,
+      "recentPerHr": 1574.7,
+      "priorPerHr": 9109.3,
+      "fresh": false
+    },
+    {
+      "sleeperId": "9230",
+      "name": "Tanner McKee",
+      "position": "QB",
+      "team": "PHI",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 16304,
+        "h24": 171208,
+        "h72": 536704
+      },
+      "drops": {
+        "h6": 4344,
+        "h24": 46840,
+        "h72": 118272
+      },
+      "addCount": 171208,
+      "dropCount": 46840,
+      "net": 124368,
+      "ratio": 0.32,
+      "recentPerHr": 2717.3,
+      "priorPerHr": 8605.8,
+      "fresh": false
+    },
+    {
+      "sleeperId": "11565",
+      "name": "J.J. McCarthy",
+      "position": "QB",
+      "team": "NYG",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 12852,
+        "h24": 158742,
+        "h72": 445158
+      },
+      "drops": {},
+      "addCount": 158742,
       "dropCount": null,
-      "net": 157675,
-      "ratio": 1.88,
-      "recentPerHr": 10122.5,
-      "priorPerHr": 5385.6,
+      "net": 158742,
+      "ratio": 0.26,
+      "recentPerHr": 2142,
+      "priorPerHr": 8105,
       "fresh": false
     },
     {
@@ -647,17 +463,61 @@
       "team": "NYJ",
       "injuryStatus": null,
       "adds": {
-        "h6": 53484,
-        "h24": 156344,
-        "h72": 182788
+        "h6": 11240,
+        "h24": 158160,
+        "h72": 356440
       },
       "drops": {},
-      "addCount": 156344,
+      "addCount": 158160,
       "dropCount": null,
-      "net": 156344,
-      "ratio": 1.56,
-      "recentPerHr": 8914,
-      "priorPerHr": 5714.4,
+      "net": 158160,
+      "ratio": 0.23,
+      "recentPerHr": 1873.3,
+      "priorPerHr": 8162.2,
+      "fresh": false
+    },
+    {
+      "sleeperId": "7553",
+      "name": "Kyle Pitts Sr.",
+      "position": "TE",
+      "team": "ATL",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 13013,
+        "h24": 156996,
+        "h72": 758562
+      },
+      "drops": {},
+      "addCount": 156996,
+      "dropCount": null,
+      "net": 156996,
+      "ratio": 0.27,
+      "recentPerHr": 2168.8,
+      "priorPerHr": 7999.1,
+      "fresh": false
+    },
+    {
+      "sleeperId": "11783",
+      "name": "Ryan Flournoy",
+      "position": "WR",
+      "team": "DAL",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 14600,
+        "h24": 155984,
+        "h72": 469856
+      },
+      "drops": {
+        "h6": 5464,
+        "h24": 53328,
+        "h72": 131584
+      },
+      "addCount": 155984,
+      "dropCount": 53328,
+      "net": 102656,
+      "ratio": 0.31,
+      "recentPerHr": 2433.3,
+      "priorPerHr": 7854.7,
       "fresh": false
     },
     {
@@ -667,169 +527,61 @@
       "team": "PIT",
       "injuryStatus": null,
       "adds": {
-        "h6": 52724,
-        "h24": 150812,
-        "h72": 262608
+        "h6": 12684,
+        "h24": 152664,
+        "h72": 364640
       },
       "drops": {
-        "h6": 31488,
-        "h24": 117520,
-        "h72": 195376
+        "h6": 5892,
+        "h24": 73640,
+        "h72": 236760
       },
-      "addCount": 150812,
-      "dropCount": 117520,
-      "net": 33292,
-      "ratio": 1.61,
-      "recentPerHr": 8787.3,
-      "priorPerHr": 5449.3,
+      "addCount": 152664,
+      "dropCount": 73640,
+      "net": 79024,
+      "ratio": 0.27,
+      "recentPerHr": 2114,
+      "priorPerHr": 7776.7,
       "fresh": false
     },
     {
-      "sleeperId": "12495",
-      "name": "Ollie Gordon",
-      "position": "RB",
-      "team": "MIA",
-      "injuryStatus": "Questionable",
+      "sleeperId": "11792",
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "MIN",
+      "injuryStatus": null,
       "adds": {
-        "h6": 47775,
-        "h24": 148540,
-        "h72": 174741
+        "h6": 10221,
+        "h24": 149376,
+        "h72": 606729
       },
       "drops": {},
-      "addCount": 148540,
+      "addCount": 149376,
       "dropCount": null,
-      "net": 148540,
-      "ratio": 1.42,
-      "recentPerHr": 7962.5,
-      "priorPerHr": 5598.1,
+      "net": 149376,
+      "ratio": 0.22,
+      "recentPerHr": 1703.5,
+      "priorPerHr": 7730.8,
       "fresh": false
     },
     {
-      "sleeperId": "4147",
-      "name": "Samaje Perine",
-      "position": "RB",
-      "team": "CIN",
-      "injuryStatus": null,
+      "sleeperId": "12487",
+      "name": "Terrance Ferguson",
+      "position": "TE",
+      "team": "LAR",
+      "injuryStatus": "IR",
       "adds": {
-        "h6": 62776,
-        "h24": 146544,
-        "h72": 167988
+        "h6": 9832,
+        "h24": 148552,
+        "h72": 818896
       },
       "drops": {},
-      "addCount": 146544,
+      "addCount": 148552,
       "dropCount": null,
-      "net": 146544,
-      "ratio": 2.25,
-      "recentPerHr": 10462.7,
-      "priorPerHr": 4653.8,
-      "fresh": false
-    },
-    {
-      "sleeperId": "13296",
-      "name": "Caleb Douglas",
-      "position": "WR",
-      "team": "MIA",
-      "injuryStatus": "Out",
-      "adds": {
-        "h6": 79744,
-        "h24": 144416,
-        "h72": 160296
-      },
-      "drops": {
-        "h72": 100488
-      },
-      "addCount": 144416,
-      "dropCount": null,
-      "net": 144416,
-      "ratio": 3.7,
-      "recentPerHr": 13290.7,
-      "priorPerHr": 3592.9,
-      "fresh": false
-    },
-    {
-      "sleeperId": "12491",
-      "name": "Corey Kiner",
-      "position": "RB",
-      "team": "NE",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 70890,
-        "h24": 142218,
-        "h72": 169092
-      },
-      "drops": {},
-      "addCount": 142218,
-      "dropCount": null,
-      "net": 142218,
-      "ratio": 2.98,
-      "recentPerHr": 11815,
-      "priorPerHr": 3962.7,
-      "fresh": false
-    },
-    {
-      "sleeperId": "12530",
-      "name": "Travis Hunter",
-      "position": "DB",
-      "team": "JAX",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 49668,
-        "h24": 141870,
-        "h72": 294144
-      },
-      "drops": {},
-      "addCount": 141870,
-      "dropCount": null,
-      "net": 141870,
-      "ratio": 1.62,
-      "recentPerHr": 8278,
-      "priorPerHr": 5122.3,
-      "fresh": false
-    },
-    {
-      "sleeperId": "13298",
-      "name": "KC Concepcion",
-      "position": "WR",
-      "team": "CLE",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 44649,
-        "h24": 131805,
-        "h72": 206361
-      },
-      "drops": {
-        "h6": 34866,
-        "h24": 98091,
-        "h72": 207288
-      },
-      "addCount": 131805,
-      "dropCount": 98091,
-      "net": 33714,
-      "ratio": 1.54,
-      "recentPerHr": 7441.5,
-      "priorPerHr": 4842,
-      "fresh": false
-    },
-    {
-      "sleeperId": "1479",
-      "name": "Keenan Allen",
-      "position": "WR",
-      "team": "IND",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 65424,
-        "h24": 125940,
-        "h72": 279948
-      },
-      "drops": {
-        "h24": 50236
-      },
-      "addCount": 125940,
-      "dropCount": 50236,
-      "net": 75704,
-      "ratio": 3.24,
-      "recentPerHr": 10904,
-      "priorPerHr": 3362,
+      "net": 148552,
+      "ratio": 0.21,
+      "recentPerHr": 1638.7,
+      "priorPerHr": 7706.7,
       "fresh": false
     },
     {
@@ -839,153 +591,64 @@
       "team": "PIT",
       "injuryStatus": null,
       "adds": {
-        "h6": 42072,
-        "h24": 119792,
-        "h72": 146020
+        "h6": 11312,
+        "h24": 148356,
+        "h72": 304512
       },
       "drops": {},
-      "addCount": 119792,
+      "addCount": 148356,
       "dropCount": null,
-      "net": 119792,
-      "ratio": 1.62,
-      "recentPerHr": 7012,
-      "priorPerHr": 4317.8,
+      "net": 148356,
+      "ratio": 0.25,
+      "recentPerHr": 1885.3,
+      "priorPerHr": 7613.6,
       "fresh": false
     },
     {
-      "sleeperId": "8129",
-      "name": "Dameon Pierce",
+      "sleeperId": "8116",
+      "name": "Pierre Strong Jr.",
       "position": "RB",
-      "team": "PHI",
+      "team": "GB",
       "injuryStatus": null,
       "adds": {
-        "h6": 35784,
-        "h24": 114680,
-        "h72": 500600
+        "h6": 14004,
+        "h24": 144270,
+        "h72": 464670
       },
       "drops": {
-        "h6": 62792,
-        "h24": 201760,
-        "h72": 287128
+        "h6": 5940,
+        "h24": 49392
       },
-      "addCount": 114680,
-      "dropCount": 201760,
-      "net": -87080,
-      "ratio": 1.36,
-      "recentPerHr": 5964,
-      "priorPerHr": 4383.1,
+      "addCount": 144270,
+      "dropCount": 49392,
+      "net": 94878,
+      "ratio": 0.32,
+      "recentPerHr": 2334,
+      "priorPerHr": 7237,
       "fresh": false
     },
     {
-      "sleeperId": "11637",
-      "name": "Keon Coleman",
+      "sleeperId": "13298",
+      "name": "KC Concepcion Jr.",
       "position": "WR",
-      "team": "BUF",
-      "injuryStatus": null,
+      "team": "CLE",
+      "injuryStatus": "Questionable",
       "adds": {
-        "h6": 27441,
-        "h24": 113958,
-        "h72": 444213
+        "h6": 8658,
+        "h24": 133983,
+        "h72": 308295
       },
       "drops": {
-        "h6": 58995,
-        "h24": 169956,
-        "h72": 328815
+        "h6": 9450,
+        "h24": 80343,
+        "h72": 231921
       },
-      "addCount": 113958,
-      "dropCount": 169956,
-      "net": -55998,
-      "ratio": 0.95,
-      "recentPerHr": 4573.5,
-      "priorPerHr": 4806.5,
-      "fresh": false
-    },
-    {
-      "sleeperId": "3214",
-      "name": "Hunter Henry",
-      "position": "TE",
-      "team": "NE",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 36426,
-        "h24": 112815,
-        "h72": 181275
-      },
-      "drops": {},
-      "addCount": 112815,
-      "dropCount": null,
-      "net": 112815,
-      "ratio": 1.43,
-      "recentPerHr": 6071,
-      "priorPerHr": 4243.8,
-      "fresh": false
-    },
-    {
-      "sleeperId": "5850",
-      "name": "Josh Jacobs",
-      "position": "RB",
-      "team": "GB",
-      "injuryStatus": "NA",
-      "adds": {
-        "h6": 37965,
-        "h24": 109220,
-        "h72": 168650
-      },
-      "drops": {},
-      "addCount": 109220,
-      "dropCount": null,
-      "net": 109220,
-      "ratio": 1.6,
-      "recentPerHr": 6327.5,
-      "priorPerHr": 3958.6,
-      "fresh": false
-    },
-    {
-      "sleeperId": "1166",
-      "name": "Kirk Cousins",
-      "position": "QB",
-      "team": "LV",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 33592,
-        "h24": 108672,
-        "h72": 310440
-      },
-      "drops": {
-        "h6": 71080,
-        "h24": 238128,
-        "h72": 367888
-      },
-      "addCount": 108672,
-      "dropCount": 238128,
-      "net": -129456,
-      "ratio": 1.34,
-      "recentPerHr": 5598.7,
-      "priorPerHr": 4171.1,
-      "fresh": false
-    },
-    {
-      "sleeperId": "13545",
-      "name": "Trey Smack",
-      "position": "K",
-      "team": "GB",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 25224,
-        "h24": 103496,
-        "h72": 189248
-      },
-      "drops": {
-        "h6": 26300,
-        "h24": 101352,
-        "h72": 132472
-      },
-      "addCount": 103496,
-      "dropCount": 101352,
-      "net": 2144,
-      "ratio": 0.97,
-      "recentPerHr": 4204,
-      "priorPerHr": 4348.4,
+      "addCount": 133983,
+      "dropCount": 80343,
+      "net": 53640,
+      "ratio": 0.21,
+      "recentPerHr": 1443,
+      "priorPerHr": 6962.5,
       "fresh": false
     },
     {
@@ -993,107 +656,43 @@
       "name": "Jordan Addison",
       "position": "WR",
       "team": "MIN",
-      "injuryStatus": "Out",
-      "adds": {
-        "h6": 36963,
-        "h24": 101619,
-        "h72": 125037
-      },
-      "drops": {
-        "h6": 33534,
-        "h24": 111861,
-        "h72": 274185
-      },
-      "addCount": 101619,
-      "dropCount": 111861,
-      "net": -10242,
-      "ratio": 1.72,
-      "recentPerHr": 6160.5,
-      "priorPerHr": 3592,
-      "fresh": false
-    },
-    {
-      "sleeperId": "13293",
-      "name": "Ja'Kobi Lane",
-      "position": "WR",
-      "team": "BAL",
       "injuryStatus": null,
       "adds": {
-        "h6": 57418,
-        "h24": 99484,
-        "h72": 127774
+        "h6": 16884,
+        "h24": 131598,
+        "h72": 264591
       },
-      "drops": {},
-      "addCount": 99484,
-      "dropCount": null,
-      "net": 99484,
-      "ratio": 4.09,
-      "recentPerHr": 9569.7,
-      "priorPerHr": 2337,
+      "drops": {
+        "h6": 7578,
+        "h24": 99927,
+        "h72": 268101
+      },
+      "addCount": 131598,
+      "dropCount": 99927,
+      "net": 31671,
+      "ratio": 0.44,
+      "recentPerHr": 2814,
+      "priorPerHr": 6373,
       "fresh": false
     },
     {
-      "sleeperId": "6865",
-      "name": "Colby Parkinson",
-      "position": "TE",
+      "sleeperId": "1433",
+      "name": "Brandon McManus",
+      "position": "K",
       "team": "LAR",
       "injuryStatus": null,
       "adds": {
-        "h6": 42198,
-        "h24": 99450,
-        "h72": 115026
+        "h6": 13224,
+        "h24": 129456,
+        "h72": 166624
       },
       "drops": {},
-      "addCount": 99450,
+      "addCount": 129456,
       "dropCount": null,
-      "net": 99450,
-      "ratio": 2.21,
-      "recentPerHr": 7033,
-      "priorPerHr": 3180.7,
-      "fresh": false
-    },
-    {
-      "sleeperId": "4017",
-      "name": "Deshaun Watson",
-      "position": "QB",
-      "team": "CLE",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 29240,
-        "h24": 98552,
-        "h72": 159184
-      },
-      "drops": {
-        "h6": 20792,
-        "h24": 70784,
-        "h72": 144944
-      },
-      "addCount": 98552,
-      "dropCount": 70784,
-      "net": 27768,
-      "ratio": 1.27,
-      "recentPerHr": 4873.3,
-      "priorPerHr": 3850.7,
-      "fresh": false
-    },
-    {
-      "sleeperId": "6130",
-      "name": "Devin Singletary",
-      "position": "RB",
-      "team": "NYG",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 47898,
-        "h24": 95247,
-        "h72": 100512
-      },
-      "drops": {},
-      "addCount": 95247,
-      "dropCount": null,
-      "net": 95247,
-      "ratio": 3.03,
-      "recentPerHr": 7983,
-      "priorPerHr": 2630.5,
+      "net": 129456,
+      "ratio": 0.34,
+      "recentPerHr": 2204,
+      "priorPerHr": 6457.3,
       "fresh": false
     },
     {
@@ -1103,85 +702,61 @@
       "team": "SF",
       "injuryStatus": null,
       "adds": {
-        "h6": 69232,
-        "h24": 90268,
-        "h72": 101032
+        "h6": 11692,
+        "h24": 123808,
+        "h72": 256272
       },
       "drops": {},
-      "addCount": 90268,
+      "addCount": 123808,
       "dropCount": null,
-      "net": 90268,
-      "ratio": 9.87,
-      "recentPerHr": 11538.7,
-      "priorPerHr": 1168.7,
+      "net": 123808,
+      "ratio": 0.31,
+      "recentPerHr": 1948.7,
+      "priorPerHr": 6228.7,
       "fresh": false
     },
     {
-      "sleeperId": "4035",
-      "name": "Alvin Kamara",
-      "position": "RB",
-      "team": "NO",
-      "injuryStatus": "Questionable",
-      "adds": {
-        "h6": 28856,
-        "h24": 87296,
-        "h72": 195912
-      },
-      "drops": {
-        "h6": 29288,
-        "h24": 84880,
-        "h72": 182288
-      },
-      "addCount": 87296,
-      "dropCount": 84880,
-      "net": 2416,
-      "ratio": 1.48,
-      "recentPerHr": 4809.3,
-      "priorPerHr": 3246.7,
-      "fresh": false
-    },
-    {
-      "sleeperId": "12545",
-      "name": "Tyler Shough",
-      "position": "QB",
-      "team": "NO",
+      "sleeperId": "13545",
+      "name": "Trey Smack",
+      "position": "K",
+      "team": "GB",
       "injuryStatus": null,
       "adds": {
-        "h6": 25320,
-        "h24": 86472,
-        "h72": 197096
+        "h6": 9272,
+        "h24": 121460,
+        "h72": 249428
       },
       "drops": {
-        "h6": 20248,
-        "h24": 59936,
-        "h72": 132696
+        "h6": 4952,
+        "h24": 63292,
+        "h72": 196152
       },
-      "addCount": 86472,
-      "dropCount": 59936,
-      "net": 26536,
-      "ratio": 1.24,
-      "recentPerHr": 4220,
-      "priorPerHr": 3397.3,
+      "addCount": 121460,
+      "dropCount": 63292,
+      "net": 58168,
+      "ratio": 0.25,
+      "recentPerHr": 1545.3,
+      "priorPerHr": 6232.7,
       "fresh": false
     },
     {
-      "sleeperId": "9757",
-      "name": "Kendre Miller",
+      "sleeperId": "8408",
+      "name": "Jordan Mason",
       "position": "RB",
-      "team": "NO",
-      "injuryStatus": null,
+      "team": "MIN",
+      "injuryStatus": "IR",
       "adds": {
-        "h6": 31598,
-        "h24": 82062,
-        "h72": 122288
+        "h6": 9645,
+        "h24": 121265,
+        "h72": 370160
       },
       "drops": {},
-      "addCount": 82062,
+      "addCount": 121265,
       "dropCount": null,
-      "net": 82062,
-      "ratio": 1.88,
-      "recentPerHr": 5266.3,
-      "priorPerHr": 2803.6,
+      "net": 121265,
+      "ratio": 0.26,
+      "recentPerHr": 1607.5,
+      "priorPerHr": 6201.1,
       "fresh": false
     },
     {
@@ -1191,69 +766,41 @@
       "team": "LV",
       "injuryStatus": null,
       "adds": {
-        "h6": 26080,
-        "h24": 79415,
-        "h72": 143480
+        "h6": 9900,
+        "h24": 121195,
+        "h72": 228855
       },
       "drops": {
-        "h6": 32505,
-        "h24": 118355,
-        "h72": 158910
+        "h6": 4625,
+        "h24": 56770,
+        "h72": 212050
       },
-      "addCount": 79415,
-      "dropCount": 118355,
-      "net": -38940,
-      "ratio": 1.47,
-      "recentPerHr": 4346.7,
-      "priorPerHr": 2963.1,
+      "addCount": 121195,
+      "dropCount": 56770,
+      "net": 64425,
+      "ratio": 0.27,
+      "recentPerHr": 1650,
+      "priorPerHr": 6183.1,
       "fresh": false
     },
     {
-      "sleeperId": "7567",
-      "name": "Kenny Gainwell",
-      "position": "RB",
-      "team": "TB",
+      "sleeperId": "MIN",
+      "name": "Minnesota Vikings",
+      "position": "DEF",
+      "team": "MIN",
       "injuryStatus": null,
       "adds": {
-        "h6": 16520,
-        "h24": 78488,
-        "h72": 131520
+        "h6": 7710,
+        "h24": 118095,
+        "h72": 701980
       },
-      "drops": {
-        "h6": 57816,
-        "h24": 150360,
-        "h72": 289224
-      },
-      "addCount": 78488,
-      "dropCount": 150360,
-      "net": -71872,
-      "ratio": 0.8,
-      "recentPerHr": 2753.3,
-      "priorPerHr": 3442.7,
-      "fresh": false
-    },
-    {
-      "sleeperId": "5045",
-      "name": "Courtland Sutton",
-      "position": "WR",
-      "team": "DEN",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 25767,
-        "h24": 76329,
-        "h72": 94221
-      },
-      "drops": {
-        "h6": 58680,
-        "h24": 185121,
-        "h72": 354618
-      },
-      "addCount": 76329,
-      "dropCount": 185121,
-      "net": -108792,
-      "ratio": 1.53,
-      "recentPerHr": 4294.5,
-      "priorPerHr": 2809,
+      "drops": {},
+      "addCount": 118095,
+      "dropCount": null,
+      "net": 118095,
+      "ratio": 0.21,
+      "recentPerHr": 1285,
+      "priorPerHr": 6132.5,
       "fresh": false
     },
     {
@@ -1263,331 +810,41 @@
       "team": "IND",
       "injuryStatus": null,
       "adds": {
-        "h6": 41880,
-        "h24": 74944,
-        "h72": 97232
+        "h6": 14992,
+        "h24": 117504,
+        "h72": 223328
       },
       "drops": {},
-      "addCount": 74944,
+      "addCount": 117504,
       "dropCount": null,
-      "net": 74944,
-      "ratio": 3.8,
-      "recentPerHr": 6980,
-      "priorPerHr": 1836.9,
+      "net": 117504,
+      "ratio": 0.44,
+      "recentPerHr": 2498.7,
+      "priorPerHr": 5695.1,
       "fresh": false
     },
     {
-      "sleeperId": "13281",
-      "name": "Jordyn Tyson",
-      "position": "WR",
-      "team": "NO",
-      "injuryStatus": "IR",
-      "adds": {
-        "h6": 30640,
-        "h24": 69136,
-        "h72": 93192
-      },
-      "drops": {},
-      "addCount": 69136,
-      "dropCount": null,
-      "net": 69136,
-      "ratio": 2.39,
-      "recentPerHr": 5106.7,
-      "priorPerHr": 2138.7,
-      "fresh": false
-    },
-    {
-      "sleeperId": "12536",
-      "name": "Jaylin Noel",
-      "position": "WR",
-      "team": "HOU",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 23500,
-        "h24": 68351,
-        "h72": 117524
-      },
-      "drops": {},
-      "addCount": 68351,
-      "dropCount": null,
-      "net": 68351,
-      "ratio": 1.57,
-      "recentPerHr": 3916.7,
-      "priorPerHr": 2491.7,
-      "fresh": false
-    },
-    {
-      "sleeperId": "8122",
-      "name": "Zonovan Knight",
-      "position": "RB",
-      "team": "ARI",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 28452,
-        "h24": 68276,
-        "h72": 93376
-      },
-      "drops": {},
-      "addCount": 68276,
-      "dropCount": null,
-      "net": 68276,
-      "ratio": 2.14,
-      "recentPerHr": 4742,
-      "priorPerHr": 2212.4,
-      "fresh": false
-    },
-    {
-      "sleeperId": "5012",
-      "name": "Mark Andrews",
-      "position": "TE",
-      "team": "BAL",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 15480,
-        "h24": 66780,
-        "h72": 139599
-      },
-      "drops": {
-        "h6": 59949,
-        "h24": 178794,
-        "h72": 350073
-      },
-      "addCount": 66780,
-      "dropCount": 178794,
-      "net": -112014,
-      "ratio": 0.91,
-      "recentPerHr": 2580,
-      "priorPerHr": 2850,
-      "fresh": false
-    },
-    {
-      "sleeperId": "12534",
-      "name": "Kyle Monangai",
-      "position": "RB",
-      "team": "CHI",
-      "injuryStatus": "Out",
-      "adds": {
-        "h6": 14640,
-        "h24": 63336,
-        "h72": 89880
-      },
-      "drops": {},
-      "addCount": 63336,
-      "dropCount": null,
-      "net": 63336,
-      "ratio": 0.9,
-      "recentPerHr": 2440,
-      "priorPerHr": 2705.3,
-      "fresh": false
-    },
-    {
-      "sleeperId": "4993",
-      "name": "Mike Gesicki",
-      "position": "TE",
-      "team": "CIN",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 23688,
-        "h24": 62604,
-        "h72": 77548
-      },
-      "drops": {
-        "h72": 103668
-      },
-      "addCount": 62604,
-      "dropCount": null,
-      "net": 62604,
-      "ratio": 1.83,
-      "recentPerHr": 3948,
-      "priorPerHr": 2162,
-      "fresh": false
-    },
-    {
-      "sleeperId": "12489",
-      "name": "RJ Harvey",
-      "position": "RB",
-      "team": "DEN",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 19432,
-        "h24": 60968,
-        "h72": 82728
-      },
-      "drops": {},
-      "addCount": 60968,
-      "dropCount": null,
-      "net": 60968,
-      "ratio": 1.4,
-      "recentPerHr": 3238.7,
-      "priorPerHr": 2307.6,
-      "fresh": false
-    },
-    {
-      "sleeperId": "13330",
-      "name": "Kenyon Sadiq",
-      "position": "TE",
-      "team": "NYJ",
-      "injuryStatus": null,
-      "adds": {
-        "h24": 60759,
-        "h72": 86229
-      },
-      "drops": {
-        "h6": 75015,
-        "h24": 189711,
-        "h72": 383310
-      },
-      "addCount": 60759,
-      "dropCount": 189711,
-      "net": -128952,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "3163",
-      "name": "Jared Goff",
+      "sleeperId": "1166",
+      "name": "Kirk Cousins",
       "position": "QB",
-      "team": "DET",
+      "team": "LV",
       "injuryStatus": null,
       "adds": {
-        "h6": 21090,
-        "h24": 60550,
-        "h72": 82240
-      },
-      "drops": {},
-      "addCount": 60550,
-      "dropCount": null,
-      "net": 60550,
-      "ratio": 1.6,
-      "recentPerHr": 3515,
-      "priorPerHr": 2192.2,
-      "fresh": false
-    },
-    {
-      "sleeperId": "8161",
-      "name": "Malik Willis",
-      "position": "QB",
-      "team": "MIA",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 20118,
-        "h24": 57288
-      },
-      "drops": {},
-      "addCount": 57288,
-      "dropCount": null,
-      "net": 57288,
-      "ratio": 1.62,
-      "recentPerHr": 3353,
-      "priorPerHr": 2065,
-      "fresh": false
-    },
-    {
-      "sleeperId": "7694",
-      "name": "Tommy Tremble",
-      "position": "TE",
-      "team": "CAR",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 26568,
-        "h24": 55424,
-        "h72": 87388
-      },
-      "drops": {},
-      "addCount": 55424,
-      "dropCount": null,
-      "net": 55424,
-      "ratio": 2.76,
-      "recentPerHr": 4428,
-      "priorPerHr": 1603.1,
-      "fresh": false
-    },
-    {
-      "sleeperId": "12469",
-      "name": "Dylan Sampson",
-      "position": "RB",
-      "team": "CLE",
-      "injuryStatus": "IR",
-      "adds": {
-        "h6": 34395,
-        "h24": 55135
-      },
-      "drops": {},
-      "addCount": 55135,
-      "dropCount": null,
-      "net": 55135,
-      "ratio": 4.98,
-      "recentPerHr": 5732.5,
-      "priorPerHr": 1152.2,
-      "fresh": false
-    },
-    {
-      "sleeperId": "8119",
-      "name": "Jahan Dotson",
-      "position": "WR",
-      "team": "ATL",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 27633,
-        "h24": 55032,
-        "h72": 72483
-      },
-      "drops": {},
-      "addCount": 55032,
-      "dropCount": null,
-      "net": 55032,
-      "ratio": 3.03,
-      "recentPerHr": 4605.5,
-      "priorPerHr": 1522.2,
-      "fresh": false
-    },
-    {
-      "sleeperId": "4037",
-      "name": "Chris Godwin",
-      "position": "WR",
-      "team": "TB",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 21366,
-        "h24": 54048,
-        "h72": 84564
+        "h6": 10656,
+        "h24": 117160,
+        "h72": 297488
       },
       "drops": {
-        "h6": 33654,
-        "h24": 96210,
-        "h72": 191028
+        "h6": 14616,
+        "h24": 155448,
+        "h72": 477624
       },
-      "addCount": 54048,
-      "dropCount": 96210,
-      "net": -42162,
-      "ratio": 1.96,
-      "recentPerHr": 3561,
-      "priorPerHr": 1815.7,
-      "fresh": false
-    },
-    {
-      "sleeperId": "11439",
-      "name": "Jaleel McLaughlin",
-      "position": "RB",
-      "team": "CLE",
-      "injuryStatus": null,
-      "adds": {
-        "h24": 53520,
-        "h72": 501980
-      },
-      "drops": {
-        "h6": 113320,
-        "h24": 307305,
-        "h72": 416870
-      },
-      "addCount": 53520,
-      "dropCount": 307305,
-      "net": -253785,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
+      "addCount": 117160,
+      "dropCount": 155448,
+      "net": -38288,
+      "ratio": 0.3,
+      "recentPerHr": 1776,
+      "priorPerHr": 5916.9,
       "fresh": false
     },
     {
@@ -1597,150 +854,584 @@
       "team": "SF",
       "injuryStatus": null,
       "adds": {
-        "h6": 35148,
-        "h24": 53248,
-        "h72": 250200
+        "h6": 11700,
+        "h24": 112100,
+        "h72": 219268
       },
       "drops": {
-        "h6": 43896,
-        "h24": 172760,
-        "h72": 239560
+        "h6": 4656,
+        "h24": 55268,
+        "h72": 295592
       },
-      "addCount": 53248,
-      "dropCount": 172760,
-      "net": -119512,
-      "ratio": 5.83,
-      "recentPerHr": 5858,
-      "priorPerHr": 1005.6,
+      "addCount": 112100,
+      "dropCount": 55268,
+      "net": 56832,
+      "ratio": 0.35,
+      "recentPerHr": 1950,
+      "priorPerHr": 5577.8,
       "fresh": false
     },
     {
-      "sleeperId": "5892",
-      "name": "David Montgomery",
-      "position": "RB",
+      "sleeperId": "1479",
+      "name": "Keenan Allen",
+      "position": "WR",
+      "team": "IND",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 9136,
+        "h24": 109388,
+        "h72": 308704
+      },
+      "drops": {},
+      "addCount": 109388,
+      "dropCount": null,
+      "net": 109388,
+      "ratio": 0.27,
+      "recentPerHr": 1522.7,
+      "priorPerHr": 5569.6,
+      "fresh": false
+    },
+    {
+      "sleeperId": "HOU",
+      "name": "Houston Texans",
+      "position": "DEF",
       "team": "HOU",
-      "injuryStatus": "Out",
+      "injuryStatus": null,
       "adds": {
-        "h6": 20112,
-        "h24": 52536,
-        "h72": 75174
+        "h6": 7570,
+        "h24": 108350,
+        "h72": 359770
       },
-      "drops": {
-        "h72": 104604
-      },
-      "addCount": 52536,
+      "drops": {},
+      "addCount": 108350,
       "dropCount": null,
-      "net": 52536,
-      "ratio": 1.86,
-      "recentPerHr": 3352,
-      "priorPerHr": 1801.3,
+      "net": 108350,
+      "ratio": 0.23,
+      "recentPerHr": 1261.7,
+      "priorPerHr": 5598.9,
       "fresh": false
     },
     {
-      "sleeperId": "9228",
-      "name": "Bryce Young",
+      "sleeperId": "5045",
+      "name": "Courtland Sutton",
+      "position": "WR",
+      "team": "DEN",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 9990,
+        "h24": 107649,
+        "h72": 204489
+      },
+      "drops": {
+        "h6": 11070,
+        "h24": 117738,
+        "h72": 395676
+      },
+      "addCount": 107649,
+      "dropCount": 117738,
+      "net": -10089,
+      "ratio": 0.31,
+      "recentPerHr": 1665,
+      "priorPerHr": 5425.5,
+      "fresh": false
+    },
+    {
+      "sleeperId": "8122",
+      "name": "Zonovan Knight",
+      "position": "RB",
+      "team": "ARI",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 24744,
+        "h24": 104294,
+        "h72": 197938
+      },
+      "drops": {},
+      "addCount": 104294,
+      "dropCount": null,
+      "net": 104294,
+      "ratio": 0.93,
+      "recentPerHr": 4124,
+      "priorPerHr": 4419.4,
+      "fresh": false
+    },
+    {
+      "sleeperId": "6130",
+      "name": "Devin Singletary",
+      "position": "RB",
+      "team": "NYG",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 6858,
+        "h24": 95040,
+        "h72": 221490
+      },
+      "drops": {},
+      "addCount": 95040,
+      "dropCount": null,
+      "net": 95040,
+      "ratio": 0.23,
+      "recentPerHr": 1143,
+      "priorPerHr": 4899,
+      "fresh": false
+    },
+    {
+      "sleeperId": "7021",
+      "name": "Rico Dowdle",
+      "position": "RB",
+      "team": "PIT",
+      "injuryStatus": "Questionable",
+      "adds": {
+        "h6": 3640,
+        "h24": 90785,
+        "h72": 294780
+      },
+      "drops": {
+        "h6": 5340,
+        "h24": 43630
+      },
+      "addCount": 90785,
+      "dropCount": 43630,
+      "net": 47155,
+      "ratio": 0.13,
+      "recentPerHr": 606.7,
+      "priorPerHr": 4841.4,
+      "fresh": false
+    },
+    {
+      "sleeperId": "4147",
+      "name": "Samaje Perine",
+      "position": "RB",
+      "team": "CIN",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 6544,
+        "h24": 88340,
+        "h72": 280744
+      },
+      "drops": {},
+      "addCount": 88340,
+      "dropCount": null,
+      "net": 88340,
+      "ratio": 0.24,
+      "recentPerHr": 1090.7,
+      "priorPerHr": 4544.2,
+      "fresh": false
+    },
+    {
+      "sleeperId": "11586",
+      "name": "Blake Corum",
+      "position": "RB",
+      "team": "LAR",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 7336,
+        "h24": 88048,
+        "h72": 344648
+      },
+      "drops": {},
+      "addCount": 88048,
+      "dropCount": null,
+      "net": 88048,
+      "ratio": 0.27,
+      "recentPerHr": 1222.7,
+      "priorPerHr": 4484,
+      "fresh": false
+    },
+    {
+      "sleeperId": "12495",
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "MIA",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 7882,
+        "h24": 86989,
+        "h72": 262829
+      },
+      "drops": {},
+      "addCount": 86989,
+      "dropCount": null,
+      "net": 86989,
+      "ratio": 0.3,
+      "recentPerHr": 1313.7,
+      "priorPerHr": 4394.8,
+      "fresh": false
+    },
+    {
+      "sleeperId": "4037",
+      "name": "Chris Godwin Jr.",
+      "position": "WR",
+      "team": "TB",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 7968,
+        "h24": 84414,
+        "h72": 157566
+      },
+      "drops": {
+        "h6": 6762,
+        "h24": 62664,
+        "h72": 205950
+      },
+      "addCount": 84414,
+      "dropCount": 62664,
+      "net": 21750,
+      "ratio": 0.31,
+      "recentPerHr": 1328,
+      "priorPerHr": 4247,
+      "fresh": false
+    },
+    {
+      "sleeperId": "11834",
+      "name": "Devaughn Vele",
+      "position": "WR",
+      "team": "NO",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 9233,
+        "h24": 81137,
+        "h72": 127988
+      },
+      "drops": {
+        "h6": 8358,
+        "h24": 91007,
+        "h72": 368417
+      },
+      "addCount": 81137,
+      "dropCount": 91007,
+      "net": -9870,
+      "ratio": 0.39,
+      "recentPerHr": 1538.8,
+      "priorPerHr": 3994.7,
+      "fresh": false
+    },
+    {
+      "sleeperId": "8132",
+      "name": "Tyler Allgeier",
+      "position": "RB",
+      "team": "ARI",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 17960,
+        "h24": 80730,
+        "h72": 102190
+      },
+      "drops": {
+        "h6": 6600,
+        "h24": 153580,
+        "h72": 591955
+      },
+      "addCount": 80730,
+      "dropCount": 153580,
+      "net": -72850,
+      "ratio": 0.86,
+      "recentPerHr": 2993.3,
+      "priorPerHr": 3487.2,
+      "fresh": false
+    },
+    {
+      "sleeperId": "4017",
+      "name": "Deshaun Watson",
       "position": "QB",
-      "team": "CAR",
+      "team": "CLE",
       "injuryStatus": null,
       "adds": {
-        "h6": 16840,
-        "h24": 50672,
-        "h72": 86180
+        "h6": 6416,
+        "h24": 77328,
+        "h72": 214048
+      },
+      "drops": {
+        "h6": 5976,
+        "h24": 62864,
+        "h72": 168176
+      },
+      "addCount": 77328,
+      "dropCount": 62864,
+      "net": 14464,
+      "ratio": 0.27,
+      "recentPerHr": 1069.3,
+      "priorPerHr": 3939.6,
+      "fresh": false
+    },
+    {
+      "sleeperId": "12491",
+      "name": "Corey Kiner",
+      "position": "RB",
+      "team": "NE",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 7086,
+        "h24": 74058,
+        "h72": 264930
       },
       "drops": {},
-      "addCount": 50672,
+      "addCount": 74058,
       "dropCount": null,
-      "net": 50672,
-      "ratio": 1.49,
-      "recentPerHr": 2806.7,
-      "priorPerHr": 1879.6,
+      "net": 74058,
+      "ratio": 0.32,
+      "recentPerHr": 1181,
+      "priorPerHr": 3720.7,
       "fresh": false
     },
     {
-      "sleeperId": "12482",
-      "name": "Savion Williams",
-      "position": "WR",
-      "team": "GB",
+      "sleeperId": "8129",
+      "name": "Dameon Pierce",
+      "position": "RB",
+      "team": "PHI",
       "injuryStatus": null,
       "adds": {
-        "h6": 24318,
-        "h24": 50337,
-        "h72": 97951
+        "h6": 7456,
+        "h24": 73552,
+        "h72": 247672
+      },
+      "drops": {
+        "h6": 19208,
+        "h24": 192568,
+        "h72": 465384
+      },
+      "addCount": 73552,
+      "dropCount": 192568,
+      "net": -119016,
+      "ratio": 0.34,
+      "recentPerHr": 1242.7,
+      "priorPerHr": 3672,
+      "fresh": false
+    },
+    {
+      "sleeperId": "4035",
+      "name": "Alvin Kamara",
+      "position": "RB",
+      "team": "NO",
+      "injuryStatus": "Questionable",
+      "adds": {
+        "h6": 4232,
+        "h24": 70440,
+        "h72": 202264
+      },
+      "drops": {
+        "h6": 10456,
+        "h24": 88760,
+        "h72": 206992
+      },
+      "addCount": 70440,
+      "dropCount": 88760,
+      "net": -18320,
+      "ratio": 0.19,
+      "recentPerHr": 705.3,
+      "priorPerHr": 3678.2,
+      "fresh": false
+    },
+    {
+      "sleeperId": "6865",
+      "name": "Colby Parkinson",
+      "position": "TE",
+      "team": "LAR",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 6066,
+        "h24": 69744,
+        "h72": 202746
       },
       "drops": {},
-      "addCount": 50337,
+      "addCount": 69744,
       "dropCount": null,
-      "net": 50337,
-      "ratio": 2.8,
-      "recentPerHr": 4053,
-      "priorPerHr": 1445.5,
+      "net": 69744,
+      "ratio": 0.29,
+      "recentPerHr": 1011,
+      "priorPerHr": 3537.7,
       "fresh": false
     },
     {
-      "sleeperId": "7049",
-      "name": "Jauan Jennings",
-      "position": "WR",
-      "team": "MIN",
+      "sleeperId": "4993",
+      "name": "Mike Gesicki",
+      "position": "TE",
+      "team": "CIN",
       "injuryStatus": null,
       "adds": {
-        "h6": 21098,
-        "h24": 50162
+        "h6": 5524,
+        "h24": 60928,
+        "h72": 141120
       },
-      "drops": {
-        "h72": 98497
-      },
-      "addCount": 50162,
+      "drops": {},
+      "addCount": 60928,
       "dropCount": null,
-      "net": 50162,
-      "ratio": 2.18,
-      "recentPerHr": 3516.3,
-      "priorPerHr": 1614.7,
+      "net": 60928,
+      "ratio": 0.3,
+      "recentPerHr": 920.7,
+      "priorPerHr": 3078,
       "fresh": false
     },
     {
-      "sleeperId": "2020",
-      "name": "Cairo Santos",
-      "position": "K",
-      "team": "CHI",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 13286,
-        "h24": 47859
-      },
-      "drops": {
-        "h6": 16149,
-        "h24": 60326
-      },
-      "addCount": 47859,
-      "dropCount": 60326,
-      "net": -12467,
-      "ratio": 1.15,
-      "recentPerHr": 2214.3,
-      "priorPerHr": 1920.7,
-      "fresh": false
-    },
-    {
-      "sleeperId": "11624",
-      "name": "Xavier Worthy",
+      "sleeperId": "13293",
+      "name": "Ja'Kobi Lane",
       "position": "WR",
-      "team": "KC",
+      "team": "BAL",
       "injuryStatus": null,
       "adds": {
-        "h6": 15363,
-        "h24": 47178,
-        "h72": 263844
+        "h6": 4370,
+        "h24": 60846,
+        "h72": 207916
+      },
+      "drops": {},
+      "addCount": 60846,
+      "dropCount": null,
+      "net": 60846,
+      "ratio": 0.23,
+      "recentPerHr": 728.3,
+      "priorPerHr": 3137.6,
+      "fresh": false
+    },
+    {
+      "sleeperId": "11435",
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "SEA",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 6201,
+        "h24": 59832,
+        "h72": 87651
       },
       "drops": {
-        "h6": 17370,
-        "h24": 55665,
-        "h72": 100836
+        "h6": 36306,
+        "h24": 349092,
+        "h72": 1056762
       },
-      "addCount": 47178,
-      "dropCount": 55665,
-      "net": -8487,
-      "ratio": 1.45,
-      "recentPerHr": 2560.5,
-      "priorPerHr": 1767.5,
+      "addCount": 59832,
+      "dropCount": 349092,
+      "net": -289260,
+      "ratio": 0.35,
+      "recentPerHr": 1033.5,
+      "priorPerHr": 2979.5,
+      "fresh": false
+    },
+    {
+      "sleeperId": "3214",
+      "name": "Hunter Henry",
+      "position": "TE",
+      "team": "NE",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 5046,
+        "h24": 59622,
+        "h72": 212640
+      },
+      "drops": {},
+      "addCount": 59622,
+      "dropCount": null,
+      "net": 59622,
+      "ratio": 0.28,
+      "recentPerHr": 841,
+      "priorPerHr": 3032,
+      "fresh": false
+    },
+    {
+      "sleeperId": "SF",
+      "name": "San Francisco 49ers",
+      "position": "DEF",
+      "team": "SF",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 5049,
+        "h24": 55638,
+        "h72": 93414
+      },
+      "drops": {
+        "h6": 5580,
+        "h24": 78516,
+        "h72": 289059
+      },
+      "addCount": 55638,
+      "dropCount": 78516,
+      "net": -22878,
+      "ratio": 0.3,
+      "recentPerHr": 841.5,
+      "priorPerHr": 2810.5,
+      "fresh": false
+    },
+    {
+      "sleeperId": "12530",
+      "name": "Travis Hunter",
+      "position": "DB",
+      "team": "JAX",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 3204,
+        "h24": 55404,
+        "h72": 277188
+      },
+      "drops": {},
+      "addCount": 55404,
+      "dropCount": null,
+      "net": 55404,
+      "ratio": 0.18,
+      "recentPerHr": 534,
+      "priorPerHr": 2900,
+      "fresh": false
+    },
+    {
+      "sleeperId": "12545",
+      "name": "Tyler Shough",
+      "position": "QB",
+      "team": "NO",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 5280,
+        "h24": 54752,
+        "h72": 196960
+      },
+      "drops": {
+        "h6": 6112,
+        "h24": 58880,
+        "h72": 140160
+      },
+      "addCount": 54752,
+      "dropCount": 58880,
+      "net": -4128,
+      "ratio": 0.32,
+      "recentPerHr": 880,
+      "priorPerHr": 2748.4,
+      "fresh": false
+    },
+    {
+      "sleeperId": "9757",
+      "name": "Kendre Miller",
+      "position": "RB",
+      "team": "NO",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 3694,
+        "h24": 52372,
+        "h72": 160840
+      },
+      "drops": {},
+      "addCount": 52372,
+      "dropCount": null,
+      "net": 52372,
+      "ratio": 0.23,
+      "recentPerHr": 615.7,
+      "priorPerHr": 2704.3,
+      "fresh": false
+    },
+    {
+      "sleeperId": "12469",
+      "name": "Dylan Sampson",
+      "position": "RB",
+      "team": "CLE",
+      "injuryStatus": "IR",
+      "adds": {
+        "h6": 4615,
+        "h24": 51855,
+        "h72": 134830
+      },
+      "drops": {},
+      "addCount": 51855,
+      "dropCount": null,
+      "net": 51855,
+      "ratio": 0.29,
+      "recentPerHr": 769.2,
+      "priorPerHr": 2624.4,
       "fresh": false
     },
     {
@@ -1750,187 +1441,41 @@
       "team": "SF",
       "injuryStatus": null,
       "adds": {
-        "h6": 20923,
-        "h24": 46102,
-        "h72": 105952
+        "h6": 3570,
+        "h24": 46557,
+        "h72": 136080
       },
       "drops": {
-        "h6": 30338,
-        "h24": 87360,
-        "h72": 179263
+        "h6": 5754,
+        "h24": 55622,
+        "h72": 187397
       },
-      "addCount": 46102,
-      "dropCount": 87360,
-      "net": -41258,
-      "ratio": 2.49,
-      "recentPerHr": 3487.2,
-      "priorPerHr": 1398.8,
+      "addCount": 46557,
+      "dropCount": 55622,
+      "net": -9065,
+      "ratio": 0.25,
+      "recentPerHr": 595,
+      "priorPerHr": 2388.2,
       "fresh": false
     },
     {
-      "sleeperId": "9753",
-      "name": "Zach Charbonnet",
-      "position": "RB",
-      "team": "SEA",
-      "injuryStatus": "PUP",
-      "adds": {
-        "h6": 15759,
-        "h24": 45843,
-        "h72": 70590
-      },
-      "drops": {},
-      "addCount": 45843,
-      "dropCount": null,
-      "net": 45843,
-      "ratio": 1.57,
-      "recentPerHr": 2626.5,
-      "priorPerHr": 1671.3,
-      "fresh": false
-    },
-    {
-      "sleeperId": "4454",
-      "name": "Kendrick Bourne",
-      "position": "WR",
-      "team": "ARI",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 16539,
-        "h24": 43470,
-        "h72": 118278
-      },
-      "drops": {
-        "h6": 26016,
-        "h24": 74043,
-        "h72": 121008
-      },
-      "addCount": 43470,
-      "dropCount": 74043,
-      "net": -30573,
-      "ratio": 1.84,
-      "recentPerHr": 2756.5,
-      "priorPerHr": 1496.2,
-      "fresh": false
-    },
-    {
-      "sleeperId": "7839",
-      "name": "Evan McPherson",
-      "position": "K",
-      "team": "CIN",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 13883,
-        "h24": 42712
-      },
-      "drops": {},
-      "addCount": 42712,
-      "dropCount": null,
-      "net": 42712,
-      "ratio": 1.44,
-      "recentPerHr": 2313.8,
-      "priorPerHr": 1601.6,
-      "fresh": false
-    },
-    {
-      "sleeperId": "11560",
-      "name": "Caleb Williams",
+      "sleeperId": "8161",
+      "name": "Malik Willis",
       "position": "QB",
-      "team": "CHI",
+      "team": "MIA",
       "injuryStatus": null,
       "adds": {
-        "h6": 13941,
-        "h24": 41427,
-        "h72": 83205
+        "h6": 3920,
+        "h24": 46445,
+        "h72": 118125
       },
       "drops": {},
-      "addCount": 41427,
+      "addCount": 46445,
       "dropCount": null,
-      "net": 41427,
-      "ratio": 1.52,
-      "recentPerHr": 2323.5,
-      "priorPerHr": 1527,
-      "fresh": false
-    },
-    {
-      "sleeperId": "8136",
-      "name": "Rachaad White",
-      "position": "RB",
-      "team": "WAS",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 11004,
-        "h24": 41307,
-        "h72": 285510
-      },
-      "drops": {},
-      "addCount": 41307,
-      "dropCount": null,
-      "net": 41307,
-      "ratio": 1.09,
-      "recentPerHr": 1834,
-      "priorPerHr": 1683.5,
-      "fresh": false
-    },
-    {
-      "sleeperId": "5967",
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "TEN",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 12640,
-        "h24": 40740
-      },
-      "drops": {},
-      "addCount": 40740,
-      "dropCount": null,
-      "net": 40740,
-      "ratio": 1.35,
-      "recentPerHr": 2106.7,
-      "priorPerHr": 1561.1,
-      "fresh": false
-    },
-    {
-      "sleeperId": "9479",
-      "name": "Darnell Washington",
-      "position": "TE",
-      "team": "PIT",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 14640,
-        "h24": 39990,
-        "h72": 162355
-      },
-      "drops": {},
-      "addCount": 39990,
-      "dropCount": null,
-      "net": 39990,
-      "ratio": 1.73,
-      "recentPerHr": 2440,
-      "priorPerHr": 1408.3,
-      "fresh": false
-    },
-    {
-      "sleeperId": "13337",
-      "name": "Emmett Johnson",
-      "position": "RB",
-      "team": "KC",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 16596,
-        "h24": 39051,
-        "h72": 100053
-      },
-      "drops": {
-        "h6": 37575,
-        "h24": 101583,
-        "h72": 184374
-      },
-      "addCount": 39051,
-      "dropCount": 101583,
-      "net": -62532,
-      "ratio": 2.22,
-      "recentPerHr": 2766,
-      "priorPerHr": 1247.5,
+      "net": 46445,
+      "ratio": 0.28,
+      "recentPerHr": 653.3,
+      "priorPerHr": 2362.5,
       "fresh": false
     },
     {
@@ -1940,21 +1485,447 @@
       "team": "BAL",
       "injuryStatus": null,
       "adds": {
-        "h6": 14220,
-        "h24": 38781,
-        "h72": 72009
+        "h24": 44910,
+        "h72": 92547
       },
       "drops": {
-        "h6": 18225,
-        "h24": 54603,
-        "h72": 98694
+        "h6": 4248,
+        "h72": 119457
       },
-      "addCount": 38781,
-      "dropCount": 54603,
-      "net": -15822,
-      "ratio": 1.74,
-      "recentPerHr": 2370,
-      "priorPerHr": 1364.5,
+      "addCount": 44910,
+      "dropCount": 4248,
+      "net": 44910,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "2020",
+      "name": "Cairo Santos",
+      "position": "K",
+      "team": "CHI",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 3731,
+        "h24": 44065,
+        "h72": 103152
+      },
+      "drops": {
+        "h72": 116949
+      },
+      "addCount": 44065,
+      "dropCount": null,
+      "net": 44065,
+      "ratio": 0.28,
+      "recentPerHr": 621.8,
+      "priorPerHr": 2240.8,
+      "fresh": false
+    },
+    {
+      "sleeperId": "11559",
+      "name": "Michael Penix Jr.",
+      "position": "QB",
+      "team": "ATL",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 3483,
+        "h24": 44058,
+        "h72": 104082
+      },
+      "drops": {},
+      "addCount": 44058,
+      "dropCount": null,
+      "net": 44058,
+      "ratio": 0.26,
+      "recentPerHr": 580.5,
+      "priorPerHr": 2254.2,
+      "fresh": false
+    },
+    {
+      "sleeperId": "PIT",
+      "name": "Pittsburgh Steelers",
+      "position": "DEF",
+      "team": "PIT",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 4116,
+        "h24": 43353
+      },
+      "drops": {
+        "h72": 116175
+      },
+      "addCount": 43353,
+      "dropCount": null,
+      "net": 43353,
+      "ratio": 0.31,
+      "recentPerHr": 686,
+      "priorPerHr": 2179.8,
+      "fresh": false
+    },
+    {
+      "sleeperId": "8119",
+      "name": "Jahan Dotson",
+      "position": "WR",
+      "team": "ATL",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 4554,
+        "h24": 43254,
+        "h72": 119667
+      },
+      "drops": {},
+      "addCount": 43254,
+      "dropCount": null,
+      "net": 43254,
+      "ratio": 0.35,
+      "recentPerHr": 759,
+      "priorPerHr": 2150,
+      "fresh": false
+    },
+    {
+      "sleeperId": "11624",
+      "name": "Xavier Worthy",
+      "position": "WR",
+      "team": "KC",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 4869,
+        "h24": 42957,
+        "h72": 121824
+      },
+      "drops": {
+        "h6": 4455,
+        "h24": 50202,
+        "h72": 127809
+      },
+      "addCount": 42957,
+      "dropCount": 50202,
+      "net": -7245,
+      "ratio": 0.38,
+      "recentPerHr": 811.5,
+      "priorPerHr": 2116,
+      "fresh": false
+    },
+    {
+      "sleeperId": "5892",
+      "name": "David Montgomery",
+      "position": "RB",
+      "team": "HOU",
+      "injuryStatus": "Questionable",
+      "adds": {
+        "h24": 42696,
+        "h72": 115806
+      },
+      "drops": {
+        "h6": 6348,
+        "h24": 50244,
+        "h72": 117000
+      },
+      "addCount": 42696,
+      "dropCount": 50244,
+      "net": -7548,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "7567",
+      "name": "Kenny Gainwell",
+      "position": "RB",
+      "team": "TB",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 3744,
+        "h24": 42544,
+        "h72": 132872
+      },
+      "drops": {
+        "h6": 13296,
+        "h24": 134912,
+        "h72": 366448
+      },
+      "addCount": 42544,
+      "dropCount": 134912,
+      "net": -92368,
+      "ratio": 0.29,
+      "recentPerHr": 624,
+      "priorPerHr": 2155.6,
+      "fresh": false
+    },
+    {
+      "sleeperId": "5012",
+      "name": "Mark Andrews",
+      "position": "TE",
+      "team": "BAL",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 3672,
+        "h24": 42120,
+        "h72": 124245
+      },
+      "drops": {
+        "h6": 13113,
+        "h24": 128322,
+        "h72": 408168
+      },
+      "addCount": 42120,
+      "dropCount": 128322,
+      "net": -86202,
+      "ratio": 0.29,
+      "recentPerHr": 612,
+      "priorPerHr": 2136,
+      "fresh": false
+    },
+    {
+      "sleeperId": "11637",
+      "name": "Keon Coleman",
+      "position": "WR",
+      "team": "BUF",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 3996,
+        "h24": 41850,
+        "h72": 271467
+      },
+      "drops": {
+        "h6": 12798,
+        "h24": 145413,
+        "h72": 374877
+      },
+      "addCount": 41850,
+      "dropCount": 145413,
+      "net": -103563,
+      "ratio": 0.32,
+      "recentPerHr": 666,
+      "priorPerHr": 2103,
+      "fresh": false
+    },
+    {
+      "sleeperId": "5850",
+      "name": "Josh Jacobs",
+      "position": "RB",
+      "team": "GB",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 3165,
+        "h24": 41710,
+        "h72": 182185
+      },
+      "drops": {},
+      "addCount": 41710,
+      "dropCount": null,
+      "net": 41710,
+      "ratio": 0.25,
+      "recentPerHr": 527.5,
+      "priorPerHr": 2141.4,
+      "fresh": false
+    },
+    {
+      "sleeperId": "9228",
+      "name": "Bryce Young",
+      "position": "QB",
+      "team": "CAR",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 3360,
+        "h24": 40744,
+        "h72": 111700
+      },
+      "drops": {},
+      "addCount": 40744,
+      "dropCount": null,
+      "net": 40744,
+      "ratio": 0.27,
+      "recentPerHr": 560,
+      "priorPerHr": 2076.9,
+      "fresh": false
+    },
+    {
+      "sleeperId": "7839",
+      "name": "Evan McPherson",
+      "position": "K",
+      "team": "CIN",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 2864,
+        "h24": 40012,
+        "h72": 93397
+      },
+      "drops": {},
+      "addCount": 40012,
+      "dropCount": null,
+      "net": 40012,
+      "ratio": 0.23,
+      "recentPerHr": 477.3,
+      "priorPerHr": 2063.8,
+      "fresh": false
+    },
+    {
+      "sleeperId": "11620",
+      "name": "Rome Odunze",
+      "position": "WR",
+      "team": "CHI",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 3996,
+        "h24": 38946
+      },
+      "drops": {},
+      "addCount": 38946,
+      "dropCount": null,
+      "net": 38946,
+      "ratio": 0.34,
+      "recentPerHr": 666,
+      "priorPerHr": 1941.7,
+      "fresh": false
+    },
+    {
+      "sleeperId": "4039",
+      "name": "Cooper Kupp",
+      "position": "WR",
+      "team": "SEA",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 3894,
+        "h24": 38562,
+        "h72": 82218
+      },
+      "drops": {},
+      "addCount": 38562,
+      "dropCount": null,
+      "net": 38562,
+      "ratio": 0.34,
+      "recentPerHr": 649,
+      "priorPerHr": 1926,
+      "fresh": false
+    },
+    {
+      "sleeperId": "13281",
+      "name": "Jordyn Tyson",
+      "position": "WR",
+      "team": "NO",
+      "injuryStatus": "IR",
+      "adds": {
+        "h6": 3024,
+        "h24": 37536,
+        "h72": 136888
+      },
+      "drops": {},
+      "addCount": 37536,
+      "dropCount": null,
+      "net": 37536,
+      "ratio": 0.26,
+      "recentPerHr": 504,
+      "priorPerHr": 1917.3,
+      "fresh": false
+    },
+    {
+      "sleeperId": "4454",
+      "name": "Kendrick Bourne",
+      "position": "WR",
+      "team": "ARI",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 3576,
+        "h24": 36414,
+        "h72": 99222
+      },
+      "drops": {
+        "h6": 4800,
+        "h24": 49767,
+        "h72": 156384
+      },
+      "addCount": 36414,
+      "dropCount": 49767,
+      "net": -13353,
+      "ratio": 0.33,
+      "recentPerHr": 596,
+      "priorPerHr": 1824.3,
+      "fresh": false
+    },
+    {
+      "sleeperId": "3163",
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "DET",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 3110,
+        "h24": 35445,
+        "h72": 113000
+      },
+      "drops": {},
+      "addCount": 35445,
+      "dropCount": null,
+      "net": 35445,
+      "ratio": 0.29,
+      "recentPerHr": 518.3,
+      "priorPerHr": 1796.4,
+      "fresh": false
+    },
+    {
+      "sleeperId": "12536",
+      "name": "Jaylin Noel",
+      "position": "WR",
+      "team": "HOU",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 3871,
+        "h24": 34902,
+        "h72": 137384
+      },
+      "drops": {},
+      "addCount": 34902,
+      "dropCount": null,
+      "net": 34902,
+      "ratio": 0.37,
+      "recentPerHr": 645.2,
+      "priorPerHr": 1723.9,
+      "fresh": false
+    },
+    {
+      "sleeperId": "5967",
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "TEN",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 3140,
+        "h24": 33800,
+        "h72": 84605
+      },
+      "drops": {},
+      "addCount": 33800,
+      "dropCount": null,
+      "net": 33800,
+      "ratio": 0.31,
+      "recentPerHr": 523.3,
+      "priorPerHr": 1703.3,
+      "fresh": false
+    },
+    {
+      "sleeperId": "2133",
+      "name": "Davante Adams",
+      "position": "WR",
+      "team": "LAR",
+      "injuryStatus": "IR",
+      "adds": {
+        "h6": 3032,
+        "h24": 33424
+      },
+      "drops": {
+        "h6": 9496,
+        "h24": 91816,
+        "h72": 399080
+      },
+      "addCount": 33424,
+      "dropCount": 91816,
+      "net": -58392,
+      "ratio": 0.3,
+      "recentPerHr": 505.3,
+      "priorPerHr": 1688.4,
       "fresh": false
     },
     {
@@ -1964,113 +1935,240 @@
       "team": "CAR",
       "injuryStatus": null,
       "adds": {
-        "h6": 11970,
-        "h24": 37745
+        "h6": 2975,
+        "h24": 33335,
+        "h72": 81445
       },
       "drops": {},
-      "addCount": 37745,
+      "addCount": 33335,
       "dropCount": null,
-      "net": 37745,
-      "ratio": 1.39,
-      "recentPerHr": 1995,
-      "priorPerHr": 1431.9,
+      "net": 33335,
+      "ratio": 0.29,
+      "recentPerHr": 495.8,
+      "priorPerHr": 1686.7,
       "fresh": false
     },
     {
-      "sleeperId": "13301",
-      "name": "Antonio Williams",
-      "position": "WR",
-      "team": "WAS",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 21598,
-        "h24": 37686
-      },
-      "drops": {},
-      "addCount": 37686,
-      "dropCount": null,
-      "net": 37686,
-      "ratio": 4.03,
-      "recentPerHr": 3599.7,
-      "priorPerHr": 893.8,
-      "fresh": false
-    },
-    {
-      "sleeperId": "11559",
-      "name": "Michael Penix",
-      "position": "QB",
-      "team": "ATL",
-      "injuryStatus": "Questionable",
-      "adds": {
-        "h6": 13611,
-        "h24": 37398,
-        "h72": 81414
-      },
-      "drops": {},
-      "addCount": 37398,
-      "dropCount": null,
-      "net": 37398,
-      "ratio": 1.72,
-      "recentPerHr": 2268.5,
-      "priorPerHr": 1321.5,
-      "fresh": false
-    },
-    {
-      "sleeperId": "DEN",
-      "name": "Denver Broncos",
-      "position": "DEF",
-      "team": "DEN",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 12585,
-        "h24": 37110
-      },
-      "drops": {},
-      "addCount": 37110,
-      "dropCount": null,
-      "net": 37110,
-      "ratio": 1.54,
-      "recentPerHr": 2097.5,
-      "priorPerHr": 1362.5,
-      "fresh": false
-    },
-    {
-      "sleeperId": "5844",
-      "name": "T.J. Hockenson",
-      "position": "TE",
-      "team": "MIN",
-      "injuryStatus": "Out",
-      "adds": {
-        "h6": 10246,
-        "h24": 36988
-      },
-      "drops": {},
-      "addCount": 36988,
-      "dropCount": null,
-      "net": 36988,
-      "ratio": 1.15,
-      "recentPerHr": 1707.7,
-      "priorPerHr": 1485.7,
-      "fresh": false
-    },
-    {
-      "sleeperId": "2505",
-      "name": "Darren Waller",
+      "sleeperId": "7694",
+      "name": "Tommy Tremble",
       "position": "TE",
       "team": "CAR",
       "injuryStatus": null,
       "adds": {
-        "h24": 33777,
-        "h72": 248508
+        "h6": 3992,
+        "h24": 32552,
+        "h72": 115516
+      },
+      "drops": {},
+      "addCount": 32552,
+      "dropCount": null,
+      "net": 32552,
+      "ratio": 0.42,
+      "recentPerHr": 665.3,
+      "priorPerHr": 1586.7,
+      "fresh": false
+    },
+    {
+      "sleeperId": "11560",
+      "name": "Caleb Williams",
+      "position": "QB",
+      "team": "CHI",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 2961,
+        "h24": 32175,
+        "h72": 92223
+      },
+      "drops": {},
+      "addCount": 32175,
+      "dropCount": null,
+      "net": 32175,
+      "ratio": 0.3,
+      "recentPerHr": 493.5,
+      "priorPerHr": 1623,
+      "fresh": false
+    },
+    {
+      "sleeperId": "13274",
+      "name": "Germie Bernard",
+      "position": "WR",
+      "team": "PIT",
+      "injuryStatus": null,
+      "adds": {
+        "h24": 31904,
+        "h72": 261339
+      },
+      "drops": {},
+      "addCount": 31904,
+      "dropCount": null,
+      "net": 31904,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "2747",
+      "name": "Jason Myers",
+      "position": "K",
+      "team": "SEA",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 2790,
+        "h24": 31245
       },
       "drops": {
-        "h6": 112473,
-        "h24": 344484,
-        "h72": 576846
+        "h72": 133445
       },
-      "addCount": 33777,
-      "dropCount": 344484,
-      "net": -310707,
+      "addCount": 31245,
+      "dropCount": null,
+      "net": 31245,
+      "ratio": 0.29,
+      "recentPerHr": 465,
+      "priorPerHr": 1580.8,
+      "fresh": false
+    },
+    {
+      "sleeperId": "9753",
+      "name": "Zach Charbonnet",
+      "position": "RB",
+      "team": "SEA",
+      "injuryStatus": "PUP",
+      "adds": {
+        "h6": 3840,
+        "h24": 30822,
+        "h72": 95235
+      },
+      "drops": {},
+      "addCount": 30822,
+      "dropCount": null,
+      "net": 30822,
+      "ratio": 0.43,
+      "recentPerHr": 640,
+      "priorPerHr": 1499,
+      "fresh": false
+    },
+    {
+      "sleeperId": "13337",
+      "name": "Emmett Johnson",
+      "position": "RB",
+      "team": "KC",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 2835,
+        "h24": 30717,
+        "h72": 89964
+      },
+      "drops": {
+        "h6": 8226,
+        "h24": 79488,
+        "h72": 231966
+      },
+      "addCount": 30717,
+      "dropCount": 79488,
+      "net": -48771,
+      "ratio": 0.31,
+      "recentPerHr": 472.5,
+      "priorPerHr": 1549,
+      "fresh": false
+    },
+    {
+      "sleeperId": "9479",
+      "name": "Darnell Washington",
+      "position": "TE",
+      "team": "PIT",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 3245,
+        "h24": 29505,
+        "h72": 90890
+      },
+      "drops": {},
+      "addCount": 29505,
+      "dropCount": null,
+      "net": 29505,
+      "ratio": 0.37,
+      "recentPerHr": 540.8,
+      "priorPerHr": 1458.9,
+      "fresh": false
+    },
+    {
+      "sleeperId": "9480",
+      "name": "Brenton Strange",
+      "position": "TE",
+      "team": "JAX",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 3195,
+        "h24": 29340
+      },
+      "drops": {
+        "h6": 18009,
+        "h24": 212526,
+        "h72": 634986
+      },
+      "addCount": 29340,
+      "dropCount": 212526,
+      "net": -183186,
+      "ratio": 0.37,
+      "recentPerHr": 532.5,
+      "priorPerHr": 1452.5,
+      "fresh": false
+    },
+    {
+      "sleeperId": "5022",
+      "name": "Dallas Goedert",
+      "position": "TE",
+      "team": "PHI",
+      "injuryStatus": null,
+      "adds": {
+        "h6": 2858,
+        "h24": 28082
+      },
+      "drops": {},
+      "addCount": 28082,
+      "dropCount": null,
+      "net": 28082,
+      "ratio": 0.34,
+      "recentPerHr": 476.3,
+      "priorPerHr": 1401.3,
+      "fresh": false
+    },
+    {
+      "sleeperId": "CAR",
+      "name": "Carolina Panthers",
+      "position": "DEF",
+      "team": "CAR",
+      "injuryStatus": null,
+      "adds": {
+        "h24": 27611
+      },
+      "drops": {},
+      "addCount": 27611,
+      "dropCount": null,
+      "net": 27611,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "12534",
+      "name": "Kyle Monangai",
+      "position": "RB",
+      "team": "CHI",
+      "injuryStatus": "Out",
+      "adds": {
+        "h24": 27408,
+        "h72": 107022
+      },
+      "drops": {
+        "h6": 4758,
+        "h24": 45408
+      },
+      "addCount": 27408,
+      "dropCount": 45408,
+      "net": -18000,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
@@ -2083,200 +2181,155 @@
       "team": "DEN",
       "injuryStatus": "IR",
       "adds": {
-        "h6": 15300,
-        "h24": 32556
+        "h6": 4268
       },
       "drops": {},
-      "addCount": 32556,
+      "addCount": 4268,
       "dropCount": null,
-      "net": 32556,
-      "ratio": 2.66,
-      "recentPerHr": 2550,
-      "priorPerHr": 958.7,
-      "fresh": false
-    },
-    {
-      "sleeperId": "12711",
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "BAL",
-      "injuryStatus": null,
-      "adds": {
-        "h24": 32538
-      },
-      "drops": {
-        "h6": 85818,
-        "h24": 310428,
-        "h72": 401334
-      },
-      "addCount": 32538,
-      "dropCount": 310428,
-      "net": -277890,
+      "net": 0,
       "ratio": null,
-      "recentPerHr": null,
+      "recentPerHr": 711.3,
       "priorPerHr": null,
-      "fresh": false
+      "fresh": true
     },
     {
-      "sleeperId": "11834",
-      "name": "Devaughn Vele",
+      "sleeperId": "3321",
+      "name": "Tyreek Hill",
       "position": "WR",
-      "team": "NO",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 12138,
-        "h24": 32487
-      },
-      "drops": {
-        "h6": 58058,
-        "h24": 187747,
-        "h72": 312382
-      },
-      "addCount": 32487,
-      "dropCount": 187747,
-      "net": -155260,
-      "ratio": 1.79,
-      "recentPerHr": 2023,
-      "priorPerHr": 1130.5,
-      "fresh": false
-    },
-    {
-      "sleeperId": "1433",
-      "name": "Brandon McManus",
-      "position": "K",
       "team": null,
       "injuryStatus": null,
       "adds": {
-        "h6": 23296
-      },
-      "drops": {},
-      "addCount": 23296,
-      "dropCount": null,
-      "net": 0,
-      "ratio": null,
-      "recentPerHr": 3882.7,
-      "priorPerHr": null,
-      "fresh": true
-    },
-    {
-      "sleeperId": "5022",
-      "name": "Dallas Goedert",
-      "position": "TE",
-      "team": "PHI",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 11466
-      },
-      "drops": {},
-      "addCount": 11466,
-      "dropCount": null,
-      "net": 0,
-      "ratio": null,
-      "recentPerHr": 1911,
-      "priorPerHr": null,
-      "fresh": true
-    },
-    {
-      "sleeperId": "12517",
-      "name": "Colston Loveland",
-      "position": "TE",
-      "team": "CHI",
-      "injuryStatus": null,
-      "adds": {
-        "h6": 10251
-      },
-      "drops": {},
-      "addCount": 10251,
-      "dropCount": null,
-      "net": 0,
-      "ratio": null,
-      "recentPerHr": 1708.5,
-      "priorPerHr": null,
-      "fresh": true
-    },
-    {
-      "sleeperId": "13286",
-      "name": "Jadarian Price",
-      "position": "RB",
-      "team": "SEA",
-      "injuryStatus": "IR",
-      "adds": {
-        "h6": 10224
+        "h6": 2856
       },
       "drops": {
-        "h6": 19224,
-        "h24": 56736,
-        "h72": 115254
+        "h6": 15024,
+        "h24": 140792,
+        "h72": 531840
       },
-      "addCount": 10224,
-      "dropCount": 56736,
-      "net": -56736,
+      "addCount": 2856,
+      "dropCount": 140792,
+      "net": -140792,
       "ratio": null,
-      "recentPerHr": 1704,
+      "recentPerHr": 476,
       "priorPerHr": null,
       "fresh": true
     },
     {
-      "sleeperId": "7528",
-      "name": "Najee Harris",
-      "position": "RB",
-      "team": "NYG",
+      "sleeperId": "421",
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
       "injuryStatus": null,
       "adds": {
-        "h72": 453075
+        "h6": 2754
       },
       "drops": {
-        "h6": 136205,
-        "h24": 436625,
-        "h72": 572140
+        "h6": 4680,
+        "h24": 45801,
+        "h72": 142281
       },
-      "addCount": null,
-      "dropCount": 436625,
-      "net": -436625,
+      "addCount": 2754,
+      "dropCount": 45801,
+      "net": -45801,
       "ratio": null,
-      "recentPerHr": null,
+      "recentPerHr": 459,
       "priorPerHr": null,
-      "fresh": false
+      "fresh": true
     },
     {
-      "sleeperId": "8134",
-      "name": "Khalil Shakir",
+      "sleeperId": "12482",
+      "name": "Savion Williams",
       "position": "WR",
-      "team": "BUF",
+      "team": "GB",
+      "injuryStatus": "Questionable",
+      "adds": {
+        "h6": 2681,
+        "h72": 107863
+      },
+      "drops": {},
+      "addCount": 2681,
+      "dropCount": null,
+      "net": 0,
+      "ratio": null,
+      "recentPerHr": 446.8,
+      "priorPerHr": null,
+      "fresh": true
+    },
+    {
+      "sleeperId": "11533",
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "DAL",
       "injuryStatus": null,
       "adds": {
-        "h72": 236322
+        "h6": 2660
       },
       "drops": {
-        "h6": 49401,
-        "h24": 156897,
-        "h72": 247860
+        "h6": 4403,
+        "h24": 49819,
+        "h72": 173341
+      },
+      "addCount": 2660,
+      "dropCount": 49819,
+      "net": -49819,
+      "ratio": null,
+      "recentPerHr": 443.3,
+      "priorPerHr": null,
+      "fresh": true
+    },
+    {
+      "sleeperId": "11439",
+      "name": "Jaleel McLaughlin",
+      "position": "RB",
+      "team": "CLE",
+      "injuryStatus": null,
+      "adds": {
+        "h72": 131765
+      },
+      "drops": {
+        "h6": 21510,
+        "h24": 230690,
+        "h72": 656155
       },
       "addCount": null,
-      "dropCount": 156897,
-      "net": -156897,
+      "dropCount": 230690,
+      "net": -230690,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "8132",
-      "name": "Tyler Allgeier",
+      "sleeperId": "8136",
+      "name": "Rachaad White",
       "position": "RB",
-      "team": "ARI",
+      "team": "WAS",
       "injuryStatus": null,
       "adds": {
-        "h72": 222230
+        "h72": 107460
       },
-      "drops": {
-        "h6": 94305,
-        "h24": 306510,
-        "h72": 423215
-      },
+      "drops": {},
       "addCount": null,
-      "dropCount": 306510,
-      "net": -306510,
+      "dropCount": null,
+      "net": 0,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "12489",
+      "name": "RJ Harvey",
+      "position": "RB",
+      "team": "DEN",
+      "injuryStatus": null,
+      "adds": {
+        "h72": 102688
+      },
+      "drops": {},
+      "addCount": null,
+      "dropCount": null,
+      "net": 0,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
@@ -2289,229 +2342,58 @@
       "team": "WAS",
       "injuryStatus": null,
       "adds": {
-        "h72": 214292
+        "h72": 91044
       },
       "drops": {
-        "h6": 57384,
-        "h24": 174936,
-        "h72": 218620
+        "h6": 6544,
+        "h24": 67568,
+        "h72": 308704
       },
       "addCount": null,
-      "dropCount": 174936,
-      "net": -174936,
+      "dropCount": 67568,
+      "net": -67568,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "7042",
-      "name": "Tyler Bass",
-      "position": "K",
-      "team": "BUF",
-      "injuryStatus": null,
-      "adds": {
-        "h72": 186955
-      },
-      "drops": {
-        "h6": 72385,
-        "h24": 268125,
-        "h72": 308365
-      },
-      "addCount": null,
-      "dropCount": 268125,
-      "net": -268125,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "13413",
-      "name": "Cyrus Allen",
-      "position": "WR",
-      "team": "KC",
-      "injuryStatus": null,
-      "adds": {
-        "h72": 134418
-      },
-      "drops": {
-        "h6": 52776,
-        "h24": 148674,
-        "h72": 231636
-      },
-      "addCount": null,
-      "dropCount": 148674,
-      "net": -148674,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "11616",
-      "name": "Jacob Cowing",
-      "position": "WR",
-      "team": "SF",
-      "injuryStatus": null,
-      "adds": {
-        "h72": 129522
-      },
-      "drops": {
-        "h6": 20232,
-        "h24": 59112
-      },
-      "addCount": null,
-      "dropCount": 59112,
-      "net": -59112,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "11647",
-      "name": "Kimani Vidal",
-      "position": "RB",
-      "team": "LAC",
-      "injuryStatus": null,
-      "adds": {
-        "h72": 121540
-      },
-      "drops": {
-        "h6": 73280,
-        "h24": 228935,
-        "h72": 338905
-      },
-      "addCount": null,
-      "dropCount": 228935,
-      "net": -228935,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "650",
-      "name": "Nick Folk",
-      "position": "K",
-      "team": "ATL",
-      "injuryStatus": null,
-      "adds": {
-        "h72": 117858
-      },
-      "drops": {
-        "h6": 85908,
-        "h24": 361086,
-        "h72": 476712
-      },
-      "addCount": null,
-      "dropCount": 361086,
-      "net": -361086,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "9480",
-      "name": "Brenton Strange",
+      "sleeperId": "13330",
+      "name": "Kenyon Sadiq",
       "position": "TE",
-      "team": "JAX",
+      "team": "NYJ",
       "injuryStatus": null,
       "adds": {
-        "h72": 103725
+        "h72": 90009
       },
       "drops": {
-        "h6": 93474,
-        "h24": 309906,
-        "h72": 421578
+        "h6": 12087,
+        "h24": 125901,
+        "h72": 430020
       },
       "addCount": null,
-      "dropCount": 309906,
-      "net": -309906,
+      "dropCount": 125901,
+      "net": -125901,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "5189",
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "injuryStatus": null,
-      "adds": {
-        "h72": 84555
-      },
-      "drops": {
-        "h6": 38634,
-        "h24": 130689,
-        "h72": 154959
-      },
-      "addCount": null,
-      "dropCount": 130689,
-      "net": -130689,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "11058",
-      "name": "Blake Grupe",
-      "position": "K",
-      "team": "LAR",
-      "injuryStatus": "IR",
-      "adds": {
-        "h72": 82341
-      },
-      "drops": {
-        "h6": 48834,
-        "h24": 195237,
-        "h72": 249399
-      },
-      "addCount": null,
-      "dropCount": 195237,
-      "net": -195237,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "11579",
-      "name": "Audric Estime",
-      "position": "RB",
-      "team": "CLE",
-      "injuryStatus": null,
-      "adds": {
-        "h72": 69564
-      },
-      "drops": {},
-      "addCount": null,
-      "dropCount": null,
-      "net": 0,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "5927",
-      "name": "Terry McLaurin",
+      "sleeperId": "7049",
+      "name": "Jauan Jennings",
       "position": "WR",
-      "team": "WAS",
-      "injuryStatus": "Out",
-      "adds": {},
+      "team": "MIN",
+      "injuryStatus": null,
+      "adds": {
+        "h72": 86863
+      },
       "drops": {
-        "h6": 375810,
-        "h24": 1069746,
-        "h72": 1144392
+        "h6": 4312
       },
       "addCount": null,
-      "dropCount": 1069746,
-      "net": -1069746,
+      "dropCount": 4312,
+      "net": 0,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
@@ -2525,33 +2407,33 @@
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 363744,
-        "h24": 1143486,
-        "h72": 1498878
+        "h6": 60210,
+        "h24": 695664,
+        "h72": 2309382
       },
       "addCount": null,
-      "dropCount": 1143486,
-      "net": -1143486,
+      "dropCount": 695664,
+      "net": -695664,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "9511",
-      "name": "Keaton Mitchell",
-      "position": "RB",
-      "team": "LAC",
-      "injuryStatus": null,
+      "sleeperId": "5927",
+      "name": "Terry McLaurin",
+      "position": "WR",
+      "team": "WAS",
+      "injuryStatus": "Out",
       "adds": {},
       "drops": {
-        "h6": 200205,
-        "h24": 594171,
-        "h72": 936243
+        "h6": 38922,
+        "h24": 501366,
+        "h72": 1800006
       },
       "addCount": null,
-      "dropCount": 594171,
-      "net": -594171,
+      "dropCount": 501366,
+      "net": -501366,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
@@ -2565,53 +2447,33 @@
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 182268,
-        "h24": 664806,
-        "h72": 841662
+        "h6": 32136,
+        "h24": 438432,
+        "h72": 1316682
       },
       "addCount": null,
-      "dropCount": 664806,
-      "net": -664806,
+      "dropCount": 438432,
+      "net": -438432,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "NE",
-      "name": "New England Patriots",
-      "position": "DEF",
-      "team": "NE",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h6": 167776,
-        "h24": 574987,
-        "h72": 703017
-      },
-      "addCount": null,
-      "dropCount": 574987,
-      "net": -574987,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "11435",
-      "name": "Emanuel Wilson",
+      "sleeperId": "9511",
+      "name": "Keaton Mitchell",
       "position": "RB",
-      "team": "SEA",
+      "team": "LAC",
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 161568,
-        "h24": 493830,
-        "h72": 666513
+        "h6": 29718,
+        "h24": 316125,
+        "h72": 1188243
       },
       "addCount": null,
-      "dropCount": 493830,
-      "net": -493830,
+      "dropCount": 316125,
+      "net": -316125,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
@@ -2625,33 +2487,13 @@
       "injuryStatus": "IR",
       "adds": {},
       "drops": {
-        "h6": 134272,
-        "h24": 427368,
-        "h72": 670392
+        "h6": 23496,
+        "h24": 229624,
+        "h72": 863456
       },
       "addCount": null,
-      "dropCount": 427368,
-      "net": -427368,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "IND",
-      "name": "Indianapolis Colts",
-      "position": "DEF",
-      "team": "IND",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h6": 124257,
-        "h24": 452187,
-        "h72": 558966
-      },
-      "addCount": null,
-      "dropCount": 452187,
-      "net": -452187,
+      "dropCount": 229624,
+      "net": -229624,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
@@ -2665,33 +2507,93 @@
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 122241,
-        "h24": 419972,
-        "h72": 784868
+        "h6": 23450,
+        "h24": 270256,
+        "h72": 899255
       },
       "addCount": null,
-      "dropCount": 419972,
-      "net": -419972,
+      "dropCount": 270256,
+      "net": -270256,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "12533",
-      "name": "Jacory Croskey-Merritt",
-      "position": "RB",
-      "team": "WAS",
-      "injuryStatus": "IR",
+      "sleeperId": "NE",
+      "name": "New England Patriots",
+      "position": "DEF",
+      "team": "NE",
+      "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 97029,
-        "h24": 295101,
-        "h72": 648225
+        "h6": 23387,
+        "h24": 312956,
+        "h72": 1087114
       },
       "addCount": null,
-      "dropCount": 295101,
-      "net": -295101,
+      "dropCount": 312956,
+      "net": -312956,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "2505",
+      "name": "Darren Waller",
+      "position": "TE",
+      "team": "CAR",
+      "injuryStatus": null,
+      "adds": {},
+      "drops": {
+        "h6": 17469,
+        "h24": 204957,
+        "h72": 713097
+      },
+      "addCount": null,
+      "dropCount": 204957,
+      "net": -204957,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "7528",
+      "name": "Najee Harris",
+      "position": "RB",
+      "team": null,
+      "injuryStatus": null,
+      "adds": {},
+      "drops": {
+        "h6": 17190,
+        "h24": 205635,
+        "h72": 771970
+      },
+      "addCount": null,
+      "dropCount": 205635,
+      "net": -205635,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "IND",
+      "name": "Indianapolis Colts",
+      "position": "DEF",
+      "team": "IND",
+      "injuryStatus": null,
+      "adds": {},
+      "drops": {
+        "h6": 16644,
+        "h24": 260409,
+        "h72": 857868
+      },
+      "addCount": null,
+      "dropCount": 260409,
+      "net": -260409,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
@@ -2705,73 +2607,153 @@
       "injuryStatus": "IR",
       "adds": {},
       "drops": {
-        "h6": 95260,
-        "h24": 387964,
-        "h72": 795376
+        "h6": 16480,
+        "h24": 182448,
+        "h72": 945980
       },
       "addCount": null,
-      "dropCount": 387964,
-      "net": -387964,
+      "dropCount": 182448,
+      "net": -182448,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "3321",
-      "name": "Tyreek Hill",
-      "position": "WR",
-      "team": null,
+      "sleeperId": "650",
+      "name": "Nick Folk",
+      "position": "K",
+      "team": "ATL",
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 71544,
-        "h24": 248656,
-        "h72": 578776
+        "h6": 16308,
+        "h24": 212220,
+        "h72": 687426
       },
       "addCount": null,
-      "dropCount": 248656,
-      "net": -248656,
+      "dropCount": 212220,
+      "net": -212220,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "BAL",
-      "name": "Baltimore Ravens",
-      "position": "DEF",
+      "sleeperId": "12533",
+      "name": "Jacory Croskey-Merritt",
+      "position": "RB",
+      "team": "WAS",
+      "injuryStatus": "IR",
+      "adds": {},
+      "drops": {
+        "h6": 14463,
+        "h24": 163386,
+        "h72": 662976
+      },
+      "addCount": null,
+      "dropCount": 163386,
+      "net": -163386,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "7042",
+      "name": "Tyler Bass",
+      "position": "K",
+      "team": "BUF",
+      "injuryStatus": null,
+      "adds": {},
+      "drops": {
+        "h6": 14200,
+        "h24": 211265,
+        "h72": 551835
+      },
+      "addCount": null,
+      "dropCount": 211265,
+      "net": -211265,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "12711",
+      "name": "Tyler Loop",
+      "position": "K",
       "team": "BAL",
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 63816,
-        "h24": 201435,
-        "h72": 238776
+        "h6": 13428,
+        "h24": 166962,
+        "h72": 589944
       },
       "addCount": null,
-      "dropCount": 201435,
-      "net": -201435,
+      "dropCount": 166962,
+      "net": -166962,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "11630",
-      "name": "Roman Wilson",
-      "position": "WR",
-      "team": "PIT",
-      "injuryStatus": "IR",
+      "sleeperId": "8154",
+      "name": "Brian Robinson Jr.",
+      "position": "RB",
+      "team": "ATL",
+      "injuryStatus": "Questionable",
       "adds": {},
       "drops": {
-        "h6": 58977,
-        "h24": 196434,
-        "h72": 445572
+        "h6": 12756,
+        "h24": 113280,
+        "h72": 332382
       },
       "addCount": null,
-      "dropCount": 196434,
-      "net": -196434,
+      "dropCount": 113280,
+      "net": -113280,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "11647",
+      "name": "Kimani Vidal",
+      "position": "RB",
+      "team": "LAC",
+      "injuryStatus": null,
+      "adds": {},
+      "drops": {
+        "h6": 12635,
+        "h24": 141460,
+        "h72": 461765
+      },
+      "addCount": null,
+      "dropCount": 141460,
+      "net": -141460,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "11625",
+      "name": "Adonai Mitchell",
+      "position": "WR",
+      "team": "NYJ",
+      "injuryStatus": "Questionable",
+      "adds": {},
+      "drops": {
+        "h6": 10496,
+        "h24": 119664,
+        "h72": 340408
+      },
+      "addCount": null,
+      "dropCount": 119664,
+      "net": -119664,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
@@ -2785,133 +2767,73 @@
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 57897,
-        "h24": 174240,
-        "h72": 325665
+        "h6": 10449,
+        "h24": 107640,
+        "h72": 355545
       },
       "addCount": null,
-      "dropCount": 174240,
-      "net": -174240,
+      "dropCount": 107640,
+      "net": -107640,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "11625",
-      "name": "Adonai Mitchell",
+      "sleeperId": "8134",
+      "name": "Khalil Shakir",
       "position": "WR",
-      "team": "NYJ",
-      "injuryStatus": "Out",
-      "adds": {},
-      "drops": {
-        "h6": 55528,
-        "h24": 151240,
-        "h72": 268304
-      },
-      "addCount": null,
-      "dropCount": 151240,
-      "net": -151240,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "9486",
-      "name": "Dontayvion Wicks",
-      "position": "WR",
-      "team": "PHI",
-      "injuryStatus": "Questionable",
-      "adds": {},
-      "drops": {
-        "h6": 54552,
-        "h24": 154191,
-        "h72": 290886
-      },
-      "addCount": null,
-      "dropCount": 154191,
-      "net": -154191,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "2133",
-      "name": "Davante Adams",
-      "position": "WR",
-      "team": "LAR",
-      "injuryStatus": "Out",
-      "adds": {},
-      "drops": {
-        "h6": 53752,
-        "h24": 199896,
-        "h72": 285400
-      },
-      "addCount": null,
-      "dropCount": 199896,
-      "net": -199896,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "8154",
-      "name": "Brian Robinson",
-      "position": "RB",
-      "team": "ATL",
+      "team": "BUF",
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 43224,
-        "h24": 142812,
-        "h72": 283872
+        "h6": 10332,
+        "h24": 118881,
+        "h72": 330228
       },
       "addCount": null,
-      "dropCount": 142812,
-      "net": -142812,
+      "dropCount": 118881,
+      "net": -118881,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "SF",
-      "name": "San Francisco 49ers",
+      "sleeperId": "11630",
+      "name": "Roman Wilson",
+      "position": "WR",
+      "team": "PIT",
+      "injuryStatus": "IR",
+      "adds": {},
+      "drops": {
+        "h6": 10152,
+        "h24": 107730,
+        "h72": 391986
+      },
+      "addCount": null,
+      "dropCount": 107730,
+      "net": -107730,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "BAL",
+      "name": "Baltimore Ravens",
       "position": "DEF",
-      "team": "SF",
+      "team": "BAL",
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 42228,
-        "h24": 162432,
-        "h72": 198399
+        "h6": 9534,
+        "h24": 125103,
+        "h72": 394818
       },
       "addCount": null,
-      "dropCount": 162432,
-      "net": -162432,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "9500",
-      "name": "Josh Downs",
-      "position": "WR",
-      "team": "IND",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h6": 41375,
-        "h24": 119020,
-        "h72": 175220
-      },
-      "addCount": null,
-      "dropCount": 119020,
-      "net": -119020,
+      "dropCount": 125103,
+      "net": -125103,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
@@ -2925,13 +2847,13 @@
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 40835,
-        "h24": 137850,
-        "h72": 233980
+        "h6": 9055,
+        "h24": 97060,
+        "h72": 299815
       },
       "addCount": null,
-      "dropCount": 137850,
-      "net": -137850,
+      "dropCount": 97060,
+      "net": -97060,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
@@ -2939,19 +2861,19 @@
     },
     {
       "sleeperId": "11631",
-      "name": "Brian Thomas",
+      "name": "Brian Thomas Jr.",
       "position": "WR",
       "team": "JAX",
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 40175,
-        "h24": 145220,
-        "h72": 280045
+        "h6": 8750,
+        "h24": 86940,
+        "h72": 298580
       },
       "addCount": null,
-      "dropCount": 145220,
-      "net": -145220,
+      "dropCount": 86940,
+      "net": -86940,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
@@ -2965,53 +2887,93 @@
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 39928,
-        "h24": 119742,
-        "h72": 222985
+        "h6": 8393,
+        "h24": 82600,
+        "h72": 246911
       },
       "addCount": null,
-      "dropCount": 119742,
-      "net": -119742,
+      "dropCount": 82600,
+      "net": -82600,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "12542",
-      "name": "Efton Chism",
-      "position": "WR",
-      "team": "NE",
+      "sleeperId": "10219",
+      "name": "Chris Rodriguez Jr.",
+      "position": "RB",
+      "team": "JAX",
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 39324,
-        "h24": 124224,
-        "h72": 230820
+        "h6": 8163,
+        "h24": 77193,
+        "h72": 204759
       },
       "addCount": null,
-      "dropCount": 124224,
-      "net": -124224,
+      "dropCount": 77193,
+      "net": -77193,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "13294",
-      "name": "Makai Lemon",
-      "position": "WR",
-      "team": "PHI",
-      "injuryStatus": "Questionable",
+      "sleeperId": "11058",
+      "name": "Blake Grupe",
+      "position": "K",
+      "team": "LAR",
+      "injuryStatus": "IR",
       "adds": {},
       "drops": {
-        "h6": 35332,
-        "h24": 101248,
-        "h72": 189892
+        "h6": 7731,
+        "h24": 92898,
+        "h72": 352638
       },
       "addCount": null,
-      "dropCount": 101248,
-      "net": -101248,
+      "dropCount": 92898,
+      "net": -92898,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "9500",
+      "name": "Josh Downs",
+      "position": "WR",
+      "team": "IND",
+      "injuryStatus": null,
+      "adds": {},
+      "drops": {
+        "h6": 7340,
+        "h24": 76805,
+        "h72": 250340
+      },
+      "addCount": null,
+      "dropCount": 76805,
+      "net": -76805,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "9486",
+      "name": "Dontayvion Wicks",
+      "position": "WR",
+      "team": "PHI",
+      "injuryStatus": null,
+      "adds": {},
+      "drops": {
+        "h6": 7332,
+        "h24": 80706,
+        "h72": 309504
+      },
+      "addCount": null,
+      "dropCount": 80706,
+      "net": -80706,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
@@ -3025,113 +2987,53 @@
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 34614,
-        "h24": 91494,
-        "h72": 137778
+        "h6": 6210,
+        "h24": 56688,
+        "h72": 184944
       },
       "addCount": null,
-      "dropCount": 91494,
-      "net": -91494,
+      "dropCount": 56688,
+      "net": -56688,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "10219",
-      "name": "Chris Rodriguez",
-      "position": "RB",
-      "team": "JAX",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h6": 31779,
-        "h24": 92799,
-        "h72": 163557
-      },
-      "addCount": null,
-      "dropCount": 92799,
-      "net": -92799,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "3634",
-      "name": "Kalif Raymond",
+      "sleeperId": "13294",
+      "name": "Makai Lemon",
       "position": "WR",
-      "team": "CHI",
+      "team": "PHI",
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 29706,
-        "h24": 83532,
-        "h72": 143812
+        "h6": 6064,
+        "h24": 61264,
+        "h72": 207244
       },
       "addCount": null,
-      "dropCount": 83532,
-      "net": -83532,
+      "dropCount": 61264,
+      "net": -61264,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "NO",
-      "name": "New Orleans Saints",
-      "position": "DEF",
-      "team": "NO",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h6": 26670,
-        "h24": 83570,
-        "h72": 109470
-      },
-      "addCount": null,
-      "dropCount": 83570,
-      "net": -83570,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "NYG",
-      "name": "New York Giants",
-      "position": "DEF",
-      "team": "NYG",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h6": 24860,
-        "h24": 87296,
-        "h72": 117720
-      },
-      "addCount": null,
-      "dropCount": 87296,
-      "net": -87296,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "4227",
-      "name": "Harrison Butker",
-      "position": "K",
+      "sleeperId": "13413",
+      "name": "Cyrus Allen",
+      "position": "WR",
       "team": "KC",
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 23192,
-        "h24": 75208,
-        "h72": 99040
+        "h6": 5592,
+        "h24": 64194,
+        "h72": 288534
       },
       "addCount": null,
-      "dropCount": 75208,
-      "net": -75208,
+      "dropCount": 64194,
+      "net": -64194,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
@@ -3145,53 +3047,33 @@
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 21950,
-        "h24": 77785,
-        "h72": 109685
+        "h6": 5450,
+        "h24": 61765,
+        "h72": 164000
       },
       "addCount": null,
-      "dropCount": 77785,
-      "net": -77785,
+      "dropCount": 61765,
+      "net": -61765,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "11635",
-      "name": "Ladd McConkey",
-      "position": "WR",
-      "team": "LAC",
-      "injuryStatus": "Out",
-      "adds": {},
-      "drops": {
-        "h6": 21775,
-        "h24": 80260,
-        "h72": 139025
-      },
-      "addCount": null,
-      "dropCount": 80260,
-      "net": -80260,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "6039",
-      "name": "Ty Johnson",
-      "position": "RB",
-      "team": "BUF",
+      "sleeperId": "5189",
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 21330,
-        "h24": 67338,
-        "h72": 100044
+        "h6": 5361,
+        "h24": 67695,
+        "h72": 238365
       },
       "addCount": null,
-      "dropCount": 67338,
-      "net": -67338,
+      "dropCount": 67695,
+      "net": -67695,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
@@ -3205,130 +3087,13 @@
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 20295,
-        "h24": 54324
+        "h6": 5211,
+        "h24": 45603,
+        "h72": 118431
       },
       "addCount": null,
-      "dropCount": 54324,
-      "net": -54324,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "PIT",
-      "name": "Pittsburgh Steelers",
-      "position": "DEF",
-      "team": "PIT",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h6": 20193,
-        "h24": 65451
-      },
-      "addCount": null,
-      "dropCount": 65451,
-      "net": -65451,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "11533",
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "DAL",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h6": 19831,
-        "h24": 85218,
-        "h72": 122962
-      },
-      "addCount": null,
-      "dropCount": 85218,
-      "net": -85218,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "7002",
-      "name": "Juwan Johnson",
-      "position": "TE",
-      "team": "NO",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h6": 19446,
-        "h24": 61106,
-        "h72": 103684
-      },
-      "addCount": null,
-      "dropCount": 61106,
-      "net": -61106,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "8180",
-      "name": "Jalen Nailor",
-      "position": "WR",
-      "team": "LV",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h6": 19161,
-        "h24": 58680,
-        "h72": 116595
-      },
-      "addCount": null,
-      "dropCount": 58680,
-      "net": -58680,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "421",
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h6": 19071,
-        "h24": 68328,
-        "h72": 99297
-      },
-      "addCount": null,
-      "dropCount": 68328,
-      "net": -68328,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "2747",
-      "name": "Jason Myers",
-      "position": "K",
-      "team": "SEA",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h6": 18995,
-        "h24": 71360
-      },
-      "addCount": null,
-      "dropCount": 71360,
-      "net": -71360,
+      "dropCount": 45603,
+      "net": -45603,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
@@ -3342,68 +3107,188 @@
       "injuryStatus": "Questionable",
       "adds": {},
       "drops": {
-        "h6": 18627,
-        "h24": 60158
+        "h6": 5110,
+        "h24": 54698,
+        "h72": 134876
       },
       "addCount": null,
-      "dropCount": 60158,
-      "net": -60158,
+      "dropCount": 54698,
+      "net": -54698,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "SEA",
-      "name": "Seattle Seahawks",
-      "position": "DEF",
-      "team": "SEA",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h6": 18312,
-        "h24": 65652
-      },
-      "addCount": null,
-      "dropCount": 65652,
-      "net": -65652,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "12506",
-      "name": "Harold Fannin",
-      "position": "TE",
-      "team": "CLE",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h6": 18090,
-        "h24": 58035,
-        "h72": 113495
-      },
-      "addCount": null,
-      "dropCount": 58035,
-      "net": -58035,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "10218",
-      "name": "Xavier Hutchinson",
+      "sleeperId": "10222",
+      "name": "Jayden Reed",
       "position": "WR",
-      "team": "HOU",
+      "team": "GB",
+      "injuryStatus": "IR",
+      "adds": {},
+      "drops": {
+        "h6": 4950,
+        "h24": 45396,
+        "h72": 119925
+      },
+      "addCount": null,
+      "dropCount": 45396,
+      "net": -45396,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "13286",
+      "name": "Jadarian Price",
+      "position": "RB",
+      "team": "SEA",
+      "injuryStatus": "IR",
+      "adds": {},
+      "drops": {
+        "h6": 4905,
+        "h24": 47745,
+        "h72": 127467
+      },
+      "addCount": null,
+      "dropCount": 47745,
+      "net": -47745,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "8180",
+      "name": "Jalen Nailor",
+      "position": "WR",
+      "team": "LV",
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 17360
+        "h6": 4770,
+        "h24": 45936,
+        "h72": 129339
       },
       "addCount": null,
-      "dropCount": 17360,
+      "dropCount": 45936,
+      "net": -45936,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "12542",
+      "name": "Efton Chism III",
+      "position": "WR",
+      "team": "NE",
+      "injuryStatus": null,
+      "adds": {},
+      "drops": {
+        "h6": 4656,
+        "h24": 56080,
+        "h72": 237996
+      },
+      "addCount": null,
+      "dropCount": 56080,
+      "net": -56080,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "11635",
+      "name": "Ladd McConkey",
+      "position": "WR",
+      "team": "LAC",
+      "injuryStatus": "Out",
+      "adds": {},
+      "drops": {
+        "h6": 4650,
+        "h24": 49235,
+        "h72": 168485
+      },
+      "addCount": null,
+      "dropCount": 49235,
+      "net": -49235,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "LV",
+      "name": "Las Vegas Raiders",
+      "position": "DEF",
+      "team": "LV",
+      "injuryStatus": null,
+      "adds": {},
+      "drops": {
+        "h6": 4524,
+        "h24": 45642,
+        "h72": 127590
+      },
+      "addCount": null,
+      "dropCount": 45642,
+      "net": -45642,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "5947",
+      "name": "Jakobi Meyers",
+      "position": "WR",
+      "team": "JAX",
+      "injuryStatus": null,
+      "adds": {},
+      "drops": {
+        "h6": 4482
+      },
+      "addCount": null,
+      "dropCount": 4482,
+      "net": 0,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "3634",
+      "name": "Kalif Raymond",
+      "position": "WR",
+      "team": "CHI",
+      "injuryStatus": null,
+      "adds": {},
+      "drops": {
+        "h6": 4446,
+        "h24": 45424,
+        "h72": 169096
+      },
+      "addCount": null,
+      "dropCount": 45424,
+      "net": -45424,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "12457",
+      "name": "Jaydon Blue",
+      "position": "RB",
+      "team": null,
+      "injuryStatus": null,
+      "adds": {},
+      "drops": {
+        "h6": 4376
+      },
+      "addCount": null,
+      "dropCount": 4376,
       "net": 0,
       "ratio": null,
       "recentPerHr": null,
@@ -3418,69 +3303,90 @@
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 17022,
-        "h24": 62601,
-        "h72": 98343
+        "h6": 4329,
+        "h24": 47400,
+        "h72": 135294
       },
       "addCount": null,
-      "dropCount": 62601,
-      "net": -62601,
+      "dropCount": 47400,
+      "net": -47400,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "12472",
-      "name": "Raheim Sanders",
-      "position": "RB",
-      "team": "CLE",
-      "injuryStatus": "IR",
-      "adds": {},
-      "drops": {
-        "h6": 16832
-      },
-      "addCount": null,
-      "dropCount": 16832,
-      "net": 0,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "10222",
-      "name": "Jayden Reed",
-      "position": "WR",
-      "team": "GB",
-      "injuryStatus": "IR",
-      "adds": {},
-      "drops": {
-        "h6": 16074,
-        "h24": 54387,
-        "h72": 120132
-      },
-      "addCount": null,
-      "dropCount": 54387,
-      "net": -54387,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "5947",
-      "name": "Jakobi Meyers",
-      "position": "WR",
-      "team": "JAX",
+      "sleeperId": "NO",
+      "name": "New Orleans Saints",
+      "position": "DEF",
+      "team": "NO",
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 15762
+        "h6": 4300,
+        "h24": 57725,
+        "h72": 168865
       },
       "addCount": null,
-      "dropCount": 15762,
-      "net": 0,
+      "dropCount": 57725,
+      "net": -57725,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "11576",
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "injuryStatus": null,
+      "adds": {},
+      "drops": {
+        "h6": 4224,
+        "h24": 44368
+      },
+      "addCount": null,
+      "dropCount": 44368,
+      "net": -44368,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "NYG",
+      "name": "New York Giants",
+      "position": "DEF",
+      "team": "NYG",
+      "injuryStatus": null,
+      "adds": {},
+      "drops": {
+        "h24": 52336,
+        "h72": 168592
+      },
+      "addCount": null,
+      "dropCount": 52336,
+      "net": -52336,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "SEA",
+      "name": "Seattle Seahawks",
+      "position": "DEF",
+      "team": "SEA",
+      "injuryStatus": null,
+      "adds": {},
+      "drops": {
+        "h24": 45064,
+        "h72": 134444
+      },
+      "addCount": null,
+      "dropCount": 45064,
+      "net": -45064,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
@@ -3494,49 +3400,47 @@
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 15520,
-        "h24": 54712,
-        "h72": 92456
+        "h24": 43896,
+        "h72": 122800
       },
       "addCount": null,
-      "dropCount": 54712,
-      "net": -54712,
+      "dropCount": 43896,
+      "net": -43896,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
       "fresh": false
     },
     {
-      "sleeperId": "12457",
-      "name": "Jaydon Blue",
-      "position": "RB",
-      "team": "PHI",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h6": 15440
-      },
-      "addCount": null,
-      "dropCount": 15440,
-      "net": 0,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "12509",
-      "name": "Tre' Harris",
-      "position": "WR",
+      "sleeperId": "8259",
+      "name": "Cameron Dicker",
+      "position": "K",
       "team": "LAC",
-      "injuryStatus": "Out",
+      "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 15432,
-        "h72": 94748
+        "h24": 43633
       },
       "addCount": null,
-      "dropCount": 15432,
+      "dropCount": 43633,
+      "net": -43633,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "4227",
+      "name": "Harrison Butker",
+      "position": "K",
+      "team": "KC",
+      "injuryStatus": null,
+      "adds": {},
+      "drops": {
+        "h72": 139804
+      },
+      "addCount": null,
+      "dropCount": null,
       "net": 0,
       "ratio": null,
       "recentPerHr": null,
@@ -3544,17 +3448,17 @@
       "fresh": false
     },
     {
-      "sleeperId": "11628",
-      "name": "Marvin Harrison",
-      "position": "WR",
-      "team": "HOU",
+      "sleeperId": "6039",
+      "name": "Ty Johnson",
+      "position": "RB",
+      "team": "BUF",
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h6": 15284
+        "h72": 136470
       },
       "addCount": null,
-      "dropCount": 15284,
+      "dropCount": null,
       "net": 0,
       "ratio": null,
       "recentPerHr": null,
@@ -3562,19 +3466,36 @@
       "fresh": false
     },
     {
-      "sleeperId": "LV",
-      "name": "Las Vegas Raiders",
-      "position": "DEF",
-      "team": "LV",
+      "sleeperId": "12506",
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "CLE",
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h24": 56844,
-        "h72": 123450
+        "h72": 127745
       },
       "addCount": null,
-      "dropCount": 56844,
-      "net": -56844,
+      "dropCount": null,
+      "net": 0,
+      "ratio": null,
+      "recentPerHr": null,
+      "priorPerHr": null,
+      "fresh": false
+    },
+    {
+      "sleeperId": "7002",
+      "name": "Juwan Johnson",
+      "position": "TE",
+      "team": "NO",
+      "injuryStatus": null,
+      "adds": {},
+      "drops": {
+        "h72": 124178
+      },
+      "addCount": null,
+      "dropCount": null,
+      "net": 0,
       "ratio": null,
       "recentPerHr": null,
       "priorPerHr": null,
@@ -3588,98 +3509,7 @@
       "injuryStatus": null,
       "adds": {},
       "drops": {
-        "h24": 56466,
-        "h72": 97446
-      },
-      "addCount": null,
-      "dropCount": 56466,
-      "net": -56466,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "11603",
-      "name": "AJ Barner",
-      "position": "TE",
-      "team": "SEA",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h24": 49614
-      },
-      "addCount": null,
-      "dropCount": 49614,
-      "net": -49614,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "2306",
-      "name": "Jameis Winston",
-      "position": "QB",
-      "team": "NYG",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h24": 49378
-      },
-      "addCount": null,
-      "dropCount": 49378,
-      "net": -49378,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "6819",
-      "name": "Michael Pittman",
-      "position": "WR",
-      "team": "PIT",
-      "injuryStatus": "IR",
-      "adds": {},
-      "drops": {
-        "h72": 100595
-      },
-      "addCount": null,
-      "dropCount": null,
-      "net": 0,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "DET",
-      "name": "Detroit Lions",
-      "position": "DEF",
-      "team": "DET",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h72": 100125
-      },
-      "addCount": null,
-      "dropCount": null,
-      "net": 0,
-      "ratio": null,
-      "recentPerHr": null,
-      "priorPerHr": null,
-      "fresh": false
-    },
-    {
-      "sleeperId": "11620",
-      "name": "Rome Odunze",
-      "position": "WR",
-      "team": "CHI",
-      "injuryStatus": null,
-      "adds": {},
-      "drops": {
-        "h72": 91608
+        "h72": 124128
       },
       "addCount": null,
       "dropCount": null,

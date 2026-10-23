@@ -180,6 +180,10 @@ const slim = (p) => {
       ...tmExpert(f),
     } : null,
     ros: f.rosPoints ?? null,
+    // Games the player's team has left (bye removed) and FantasyPros' per-game rate:
+    // the agreed ROS number prices a rank per game, then multiplies by these games.
+    rosG: f.rosGames ?? null,
+    rosPg: f.rosPerGame ?? null,
     rosRk: f.rosRank ?? null,
     rosPr: f.rosPosRank ?? null,
     g: f.startSitGrade ?? null,
@@ -209,6 +213,7 @@ const slim = (p) => {
       rk: f.draftsharks.rank ?? null,
       bye: !!f.draftsharks.bye,
       ros: f.draftsharks.rosTotal ?? null,
+      rosW: f.draftsharks.rosWeekly ?? null,
       // Draft Sharks publishes floor/ceiling for the ROS board too, not just the week.
       rosFloor: f.draftsharks.rosFloor ?? null,
       rosCeiling: f.draftsharks.rosCeiling ?? null,
@@ -229,6 +234,27 @@ const slim = (p) => {
       inj: f.draftsharks.injuryRisk ?? null,
     } : null,
     sch: f.schedule || null,
+    /**
+     * VegasEdge, this week only: sportsbook props scored at this format, the
+     * position rank by them (complete markets only), and the simulation's
+     * spread — p10 floor, p50, p90 ceiling, boom/bust share, and the skew.
+     */
+    vg: f.vegas ? {
+      wk: f.vegas.points ?? null,
+      prk: f.vegas.posRank ?? null,
+      ok: f.vegas.complete,
+      miss: f.vegas.missing ?? null,
+      vol: f.vegas.volatility ?? null,
+      fl: f.vegas.floor ?? null,
+      md: f.vegas.median ?? null,
+      ce: f.vegas.ceiling ?? null,
+      boom: f.vegas.boom ?? null,
+      bust: f.vegas.bust ?? null,
+      sk: f.vegas.skew ?? null,
+      ds: f.vegas.distStatus ?? null,
+      st: f.vegas.stats ?? null,
+      tdm: f.vegas.tdMethod ?? null,
+    } : null,
     /** Dynasty Daddy's player data: age, ADP, Sleeper roster/start rates and three sites' ROS ranks. */
     dd: f.dd ? {
       age: f.dd.age ?? null,

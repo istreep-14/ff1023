@@ -1,9 +1,7 @@
 import { readdirSync, existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { FPDIR } from './config.js';
-import { nameKey } from './sleeper.js';
-import { normPos } from './teams.js';
-import { pointsIndex, draftsharksIndex } from './enrich.js';
+import { pointsIndex, draftsharksIndex, dsFind } from './enrich.js';
 import { loadActualsIndex, formatPoints } from './actuals.js';
 import { SOURCE_ORDER } from './sourcetables.js';
 
@@ -70,7 +68,6 @@ function fpWeekBoard(season, week, scoring) {
  * Sources tables use (name+position) so the two agree on who is who.
  */
 function weekProjections({ season, week, scoring, pool, ds }) {
-  const byName = (idx, r) => idx.get(nameKey(r.n, r.p)) || idx.get(nameKey(r.n, normPos(r.p))) || null;
   const cell = (weeks, w) => weeks?.[w] ?? weeks?.[String(w)] ?? null;
   const fp = fpWeekBoard(season, week, scoring);
 
@@ -78,7 +75,7 @@ function weekProjections({ season, week, scoring, pool, ds }) {
   for (const r of pool) {
     const put = (src, v) => { if (v != null && Number.isFinite(Number(v))) out[src].set(r.i, Number(v)); };
     put('fp', fp.get(r.i));
-    put('draftsharks', cell(byName(ds, r)?.weeks, week)?.proj);
+    put('draftsharks', cell(dsFind(ds, { name: r.n, position: r.p, team: r.t })?.weeks, week)?.proj);
   }
   return out;
 }

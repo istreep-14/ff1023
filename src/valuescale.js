@@ -28,7 +28,10 @@
  * `value` (a 0–100 scale, higher is better) or `rank` (lower is better).
  * `vsRaw` is the number as published; `vsScore` turns it so that higher is
  * always better, which is what ordering reads. `points` sources set the
- * points curve.
+ * points curve. A ROS points source also has a `rate`, its per-game number:
+ * games left differ by player (a bye still to come), so the ROS curve is per
+ * game and each player's agreed points are that rate times `vsGames` — his
+ * team's games left, one count for every source.
  *
  * `feed` is the Sources tab that holds the number (`sourcefeeds.js`
  * FEED_SITES site id + feed key). `role` is `input` (votes), `compare`
@@ -42,8 +45,8 @@
  */
 
 export const VS_SOURCES = [
-  { id: 'fp:ros', group: 'fp', input: true, role: 'input', feed: { site: 'fp', key: 'ros' }, label: 'FantasyPros ROS (rankings-implied points)', short: 'FantasyPros', kind: 'points', points: true, raw: (r) => r.ros ?? null },
-  { id: 'ds:ros', group: 'ds', input: true, role: 'input', feed: { site: 'draftsharks', key: 'ros' }, label: 'Draft Sharks ROS projection', short: 'DS proj', kind: 'points', points: true, raw: (r) => r.ds?.ros ?? null },
+  { id: 'fp:ros', group: 'fp', input: true, role: 'input', feed: { site: 'fp', key: 'ros' }, label: 'FantasyPros ROS (rankings-implied points)', short: 'FantasyPros', kind: 'points', points: true, raw: (r) => r.ros ?? null, rate: (r) => r.rosPg ?? null },
+  { id: 'ds:ros', group: 'ds', input: true, role: 'input', feed: { site: 'draftsharks', key: 'ros' }, label: 'Draft Sharks ROS projection', short: 'DS proj', kind: 'points', points: true, raw: (r) => r.ds?.ros ?? null, rate: (r) => r.ds?.rosW ?? null },
   { id: 'ds:3d', group: 'ds', input: true, role: 'input', feed: { site: 'draftsharks', key: 'value' }, label: 'Draft Sharks 3D Value', short: 'DS 3D', kind: 'value', raw: (r) => r.ds?.val ?? null },
   { id: 'espn:ros', group: 'other', input: false, role: 'compare', feed: { site: 'dd', key: 'players' }, label: 'ESPN ROS rank', short: 'ESPN', kind: 'rank', raw: (r) => r.dd?.r?.[0] ?? null },
   { id: 'fd:ros', group: 'other', input: false, role: 'compare', feed: { site: 'dd', key: 'players' }, label: 'FanDuel ROS rank', short: 'FanDuel', kind: 'rank', raw: (r) => r.dd?.r?.[1] ?? null },
@@ -76,8 +79,21 @@ export function vsSignals(sources) {
   const inputs = sources.filter((s) => s.input);
   const perSite = {};
   for (const s of inputs) perSite[s.group] = (perSite[s.group] || 0) + 1;
-  return inputs.map((s) => ({ id: s.id, label: s.label, points: !!s.points, weight: 1 / perSite[s.group], score: (r) => vsScore(r, s) }));
+  return inputs.map((s) => ({
+    id: s.id, label: s.label, points: !!s.points, weight: 1 / perSite[s.group],
+    score: (r) => vsScore(r, s), rate: s.rate ? (r) => vsRate(r, s) : null,
+  }));
 }
+
+/** A ROS points source's per-game number for a player, or null. */
+export function vsRate(row, src) {
+  if (!row || !src?.rate) return null;
+  const v = src.rate(row);
+  return v == null || !Number.isFinite(Number(v)) ? null : Number(v);
+}
+
+/** The games a player's team has left this season, bye removed: what a per-game rate is multiplied by. */
+export const vsGames = (row) => (row?.rosG == null ? null : Number(row.rosG));
 
 /** The sources a pool of slim rows can answer for: one nobody in it is covered by is left out rather than shown as a column of dashes. */
 export function vsSources(pool, sources = VS_SOURCES) {

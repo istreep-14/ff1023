@@ -35,9 +35,17 @@ Two rules keep the numbers honest, and both were learned the hard way:
   which source said what, and a stale source averaged with a fresh one read as
   a real move.
 
-Earlier versions also pulled VegasEdge, WinWithOdds, First Down Studio, FanDuel
-and Sleeper/Yahoo weekly projections. They were dropped (see git history) —
+Earlier versions also pulled WinWithOdds, First Down Studio, FanDuel and
+Sleeper/Yahoo weekly projections. They were dropped (see git history) —
 static season files, expiring cookies, or numbers on a different scale.
+
+VegasEdge was dropped with them and brought back (2026-10-23) for what no
+other source here has: a simulated spread around this week's projection
+(p10–p90, boom/bust, skew). It is shown beside the agreed number and is not
+an input to it. Its points are scored from the props' stat line, never read
+off its board — the board follows whatever scoring the account last saved
+(a PPR pull came back half-PPR). `VEGAS_TOKEN` expires about monthly; the
+sync says so before asking.
 
 ## Daily use
 

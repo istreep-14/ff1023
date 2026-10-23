@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T06:50:41.551Z",
+  "updatedAt": "2026-10-23T09:38:39.110Z",
   "sources": {
     "fanduel": {
       "fetchedAt": "2026-09-22T16:56:56.022Z",
@@ -41,10 +41,10 @@
       "note": null
     },
     "sleeper-players": {
-      "fetchedAt": "2026-10-21T06:50:41.444Z",
+      "fetchedAt": "2026-10-23T09:11:48.871Z",
       "sourceAt": null,
       "prevSourceAt": null,
-      "etag": "W/\"5afc007e031aa15ad2a71ac1cfa59725\"",
+      "etag": "W/\"2dc607d42b2b7d51138c8b09d6d2d724\"",
       "season": null,
       "week": null,
       "items": 12229,
@@ -55,7 +55,7 @@
       "note": null
     },
     "idmap": {
-      "fetchedAt": "2026-10-21T06:50:41.551Z",
+      "fetchedAt": "2026-10-23T09:11:49.014Z",
       "sourceAt": null,
       "prevSourceAt": null,
       "etag": null,
@@ -63,19 +63,19 @@
       "week": null,
       "items": 846,
       "ok": [
-        "776 matched"
+        "778 matched"
       ],
       "failed": [],
-      "note": "70 unmatched (espn 0, yahoo 0, name 776)"
+      "note": "68 unmatched (espn 0, yahoo 0, name 778)"
     },
     "scrape": {
-      "fetchedAt": "2026-10-21T03:36:24.706Z",
+      "fetchedAt": "2026-10-22T08:38:29.745Z",
       "sourceAt": null,
       "prevSourceAt": null,
       "etag": null,
       "season": null,
       "week": null,
-      "items": 806,
+      "items": 802,
       "ok": [
         "Cville 2026",
         "Sunday Funday",
@@ -86,54 +86,72 @@
       "note": null
     },
     "fp": {
-      "fetchedAt": "2026-10-21T03:42:59.264Z",
-      "sourceAt": "2026-10-21T02:14:54.000Z",
+      "fetchedAt": "2026-10-22T08:38:33.402Z",
+      "sourceAt": "2026-10-22T07:37:07.000Z",
       "prevSourceAt": "2026-10-21T02:14:54.000Z",
       "etag": null,
       "season": 2026,
       "week": 7,
       "items": 12,
       "ok": [
+        "wk7 PPR RB",
         "wk7 PPR QB",
         "wk7 PPR WR",
-        "wk7 PPR RB",
+        "wk7 PPR K",
         "wk7 PPR TE",
         "wk7 PPR DST",
-        "wk7 PPR K",
-        "ROS PPR QB",
-        "ROS PPR RB",
         "ROS PPR WR",
+        "ROS PPR RB",
+        "ROS PPR QB",
+        "ROS PPR TE",
         "ROS PPR K",
         "ROS PPR DST",
-        "ROS PPR TE",
-        "projections PPR QB wk7",
-        "projections PPR WR wk7",
-        "projections PPR RB wk7",
-        "projections PPR K wk7",
-        "projections PPR DST wk7",
-        "projections PPR TE wk7",
         "news",
         "injuries"
       ],
-      "failed": [],
+      "failed": [
+        {
+          "label": "projections PPR QB wk7",
+          "error": "no projections table body found"
+        },
+        {
+          "label": "projections PPR WR wk7",
+          "error": "no projections table body found"
+        },
+        {
+          "label": "projections PPR RB wk7",
+          "error": "no projections table body found"
+        },
+        {
+          "label": "projections PPR TE wk7",
+          "error": "no projections table body found"
+        },
+        {
+          "label": "projections PPR DST wk7",
+          "error": "no projections table body found"
+        },
+        {
+          "label": "projections PPR K wk7",
+          "error": "no projections table body found"
+        }
+      ],
       "note": "public-pages"
     },
     "vegas": {
-      "fetchedAt": "2026-09-22T16:56:21.180Z",
-      "sourceAt": "2026-09-22T14:00:21Z",
-      "prevSourceAt": "2026-09-21T23:45:02Z",
+      "fetchedAt": "2026-10-23T09:38:39.110Z",
+      "sourceAt": "2026-10-22T23:45:07Z",
+      "prevSourceAt": "2026-10-22T23:45:07Z",
       "etag": null,
       "season": 2026,
-      "week": 3,
-      "items": 4,
+      "week": 7,
+      "items": 387,
       "ok": [
-        "Average/qb",
-        "Average/rb",
-        "Average/wr",
-        "Average/te"
+        "qb (29)",
+        "flex (358)",
+        "PPR distributions (156)"
       ],
       "failed": [],
-      "note": null
+      "note": "week 7 · PPR"
     },
     "vegas-dist": {
       "fetchedAt": "2026-09-22T16:56:53.857Z",
@@ -165,36 +183,36 @@
       "note": null
     },
     "buzz": {
-      "fetchedAt": "2026-10-21T03:36:44.777Z",
-      "sourceAt": "2026-10-20T12:00:00.000Z",
+      "fetchedAt": "2026-10-22T08:38:47.258Z",
+      "sourceAt": "2026-10-22T12:00:00.000Z",
       "prevSourceAt": "2026-10-20T12:00:00.000Z",
       "etag": null,
       "season": 2026,
       "week": 7,
-      "items": 677,
+      "items": 679,
       "ok": [
-        "2026-10-20 (344)",
-        "2026-10-19 (333)"
+        "2026-10-22 (341)",
+        "2026-10-21 (338)"
       ],
       "failed": [],
-      "note": "days: 2026-10-20, 2026-10-19"
+      "note": "days: 2026-10-22, 2026-10-21"
     },
     "trend": {
-      "fetchedAt": "2026-10-21T03:36:45.377Z",
+      "fetchedAt": "2026-10-22T08:38:48.014Z",
       "sourceAt": null,
       "prevSourceAt": null,
       "etag": null,
       "season": 2026,
       "week": 7,
-      "items": 178,
+      "items": 168,
       "ok": [
-        "178 players"
+        "168 players"
       ],
       "failed": [],
       "note": "windows 6/24/72h"
     },
     "leaguedetail": {
-      "fetchedAt": "2026-10-21T03:36:46.370Z",
+      "fetchedAt": "2026-10-22T08:38:49.100Z",
       "sourceAt": null,
       "prevSourceAt": null,
       "etag": null,
@@ -208,7 +226,7 @@
       "note": null
     },
     "matchups": {
-      "fetchedAt": "2026-10-21T03:37:06.048Z",
+      "fetchedAt": "2026-10-22T08:39:11.587Z",
       "sourceAt": null,
       "prevSourceAt": null,
       "etag": null,
@@ -216,9 +234,9 @@
       "week": 7,
       "items": 4,
       "ok": [
-        "Cville 2026",
-        "Sigma Chi 23",
         "Sunday Funday",
+        "Sigma Chi 23",
+        "Cville 2026",
         "Krause"
       ],
       "failed": [],
@@ -256,16 +274,16 @@
       "note": "18 weeks stored"
     },
     "draftsharks": {
-      "fetchedAt": "2026-10-21T03:36:32.607Z",
+      "fetchedAt": "2026-10-22T19:17:24.218Z",
       "sourceAt": null,
       "prevSourceAt": null,
       "etag": null,
       "season": 2026,
       "week": 7,
-      "items": 520,
+      "items": 521,
       "ok": [
-        "PPR week 7 (329)",
-        "PPR ROS (496)"
+        "PPR week 7 (333)",
+        "PPR ROS (487)"
       ],
       "failed": [],
       "note": "PPR · week 7 + ROS"
@@ -301,13 +319,13 @@
       "note": "browser-ingested from clipboard (captured 2026-09-14T20:12:50.972Z)"
     },
     "trade": {
-      "fetchedAt": "2026-10-21T03:36:33.482Z",
-      "sourceAt": "2026-10-20T09:55:33.000Z",
+      "fetchedAt": "2026-10-22T08:38:39.184Z",
+      "sourceAt": "2026-10-21T09:55:32.000Z",
       "prevSourceAt": "2026-10-20T09:55:33.000Z",
       "etag": null,
       "season": 2026,
       "week": 7,
-      "items": 351,
+      "items": 355,
       "ok": [
         "PPR"
       ],
@@ -315,7 +333,7 @@
       "note": null
     },
     "leaguedetail-backfill": {
-      "fetchedAt": "2026-10-21T03:36:48.038Z",
+      "fetchedAt": "2026-10-22T08:38:50.872Z",
       "sourceAt": null,
       "prevSourceAt": null,
       "etag": null,
@@ -344,15 +362,15 @@
       "note": "filled w1, w2"
     },
     "actuals": {
-      "fetchedAt": "2026-10-21T03:37:06.214Z",
+      "fetchedAt": "2026-10-23T08:54:13.032Z",
       "sourceAt": null,
       "prevSourceAt": null,
       "etag": null,
       "season": 2026,
       "week": 7,
-      "items": 0,
+      "items": 22,
       "ok": [
-        "wk7:0"
+        "wk7:22"
       ],
       "failed": [],
       "note": "kept weeks 1,2,3,4,5,6"
@@ -393,7 +411,7 @@
       "note": null
     },
     "ddleague": {
-      "fetchedAt": "2026-10-21T03:36:53.877Z",
+      "fetchedAt": "2026-10-22T08:38:56.438Z",
       "sourceAt": null,
       "prevSourceAt": null,
       "etag": null,
@@ -413,13 +431,13 @@
       "note": null
     },
     "ddplayers": {
-      "fetchedAt": "2026-10-21T04:04:28.704Z",
-      "sourceAt": "2026-10-20T08:01:51.367Z",
-      "prevSourceAt": null,
+      "fetchedAt": "2026-10-22T08:38:39.913Z",
+      "sourceAt": "2026-10-22T08:01:53.992Z",
+      "prevSourceAt": "2026-10-20T08:01:51.367Z",
       "etag": null,
       "season": 2026,
       "week": 7,
-      "items": 620,
+      "items": 621,
       "ok": [
         "players"
       ],

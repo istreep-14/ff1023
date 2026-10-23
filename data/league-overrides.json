@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T05:00:43.113Z",
+  "updatedAt": "2026-10-23T09:38:41.138Z",
   "leagues": {
     "nfl~8bd69940-f400-46f3-a9f6-a5975a5b9b87": {
       "nickname": null,
@@ -147,6 +147,80 @@
         "divisionSeeds": 2,
         "wildcards": null,
         "tiebreak": "pointsFor",
+        "startWeek": null,
+        "note": null
+      },
+      "scoring": {},
+      "waivers": {
+        "type": null,
+        "claimDays": null,
+        "processDay": null,
+        "processHour": null,
+        "note": null
+      },
+      "notes": null
+    },
+    "nfl~82339d20-2d36-4630-807d-c34113a2875f": {
+      "nickname": null,
+      "myTeamIds": [
+        "7"
+      ],
+      "primaryTeamId": "7",
+      "teams": {
+        "1": {
+          "nickname": "Zach Krause",
+          "abbreviation": null
+        },
+        "2": {
+          "nickname": "Tyler Krause"
+        },
+        "3": {
+          "nickname": "Eric Gordon"
+        },
+        "4": {
+          "nickname": "Tim Mueller",
+          "abbreviation": "TIM"
+        },
+        "5": {
+          "nickname": "Ryan Hillbish",
+          "abbreviation": "RYAN"
+        },
+        "6": {
+          "nickname": "Nick Mikesic",
+          "abbreviation": "NICK"
+        },
+        "7": {
+          "nickname": "Ian Streeper",
+          "abbreviation": "ian"
+        },
+        "8": {
+          "nickname": "Blaise Blomstrom",
+          "abbreviation": "BLZ"
+        },
+        "9": {
+          "abbreviation": "BRYC",
+          "nickname": "Bryce Streeper"
+        },
+        "10": {
+          "nickname": "Keith Krause",
+          "abbreviation": "KEIT"
+        },
+        "11": {
+          "nickname": "Liam Grande",
+          "abbreviation": "LIAM"
+        },
+        "12": {
+          "abbreviation": "AJ",
+          "nickname": "AJ Hansen"
+        }
+      },
+      "divisions": [],
+      "playoffs": {
+        "rule": null,
+        "playoffTeams": null,
+        "divisionSeeds": null,
+        "wildcards": null,
+        "tiebreak": null,
         "startWeek": null,
         "note": null
       },

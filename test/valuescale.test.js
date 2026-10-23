@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { VS_SOURCES, VS_WEEK_SOURCES, VS_DISPLAY, vsSources, vsSignals, vsRaw, vsScore } from '../src/valuescale.js';
+import { VS_SOURCES, VS_WEEK_SOURCES, VS_DISPLAY, vsSources, vsSignals, vsRaw, vsScore, vsGames } from '../src/valuescale.js';
 import { FEED_SITES } from '../src/sourcefeeds.js';
 
 const allen = { i: 1, p: 'QB', ros: 260, rosRk: 2, ds: { ros: 250, val: 88 }, dd: { r: [1, 3, null] } };
@@ -81,4 +81,13 @@ test('every catalog product points at a Sources tab, and display products do not
   assert.equal(vsRaw(row, VS_WEEK_SOURCES.find((s) => s.id === 'fp:proj')), 11);
   assert.equal(vsRaw(row, VS_DISPLAY.find((s) => s.id === 'fp:week')), 12);
   assert.equal(vsRaw(row, VS_DISPLAY.find((s) => s.id === 'fp:expert')), 9);
+});
+
+test('a ROS projection carries its per-game rate, and games left come off the row', () => {
+  const row = { ros: 120, rosPg: 10.9, rosG: 11, ds: { ros: 110, rosW: 10 } };
+  const sig = Object.fromEntries(vsSignals(VS_SOURCES).map((s) => [s.id, s]));
+  assert.equal(sig['fp:ros'].rate(row), 10.9);
+  assert.equal(sig['ds:ros'].rate(row), 10);
+  assert.equal(sig['ds:3d'].rate, null);
+  assert.equal(vsGames(row), 11);
 });

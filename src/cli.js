@@ -32,6 +32,7 @@ import { trendSync, fetchAll as fetchTrending } from './sleepertrend.js';
 import { loadSignals } from './signals.js';
 import { runPipeline, printStatus, pipelineMods, PRESETS } from './sync.js';
 import { dsSync, dsWeekReport } from './draftsharks.js';
+import { vegasSync } from './vegas.js';
 import { tail as runlogTail } from './runlog.js';
 import { writeJsonAtomic } from './jsonfile.js';
 import { scheduleSync, readSchedule, repairStore, emptyTeams, importScheduleWeeks, filePath as scheduleFilePath } from './schedule.js';
@@ -483,6 +484,11 @@ const commands = {
     await dsSync({ season: opt('season'), week: opt('week'), scorings: opt('scoring')?.split(',') || null });
   },
 
+  /** VegasEdge: this week's props-implied projections and their spread. */
+  async 'vegas:sync'() {
+    await vegasSync({ season: opt('season'), week: opt('week'), scorings: opt('scoring')?.split(',') || null });
+  },
+
   async 'schedule:sync'() {
     const args = { season: opt('season'), week: opt('week') };
     if (opt('week')) return void (await scheduleSync({ ...args, weeks: [Number(opt('week'))] }));
@@ -775,6 +781,8 @@ const commands = {
        [--week N] [--season Y] [--scoring PPR,HALF]
   fp:check                    validate FP_API_KEY, show resolved season/week
   ds:sync                     Draft Sharks: week + ROS -> data/draftsharks/
+  vegas:sync                  VegasEdge (needs VEGAS_TOKEN): this week's props-implied
+                              projections, percentiles, boom/bust -> data/vegas/
   sync --only projections     both of the above, then the joins
 
  Verification:

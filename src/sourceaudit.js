@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import { DATA, FPDIR } from './config.js';
 import { nameKey } from './sleeper.js';
 import { draftsharksIndex } from './enrich.js';
+import { readVegas, scoreLine } from './vegas.js';
 
 /**
  * Do the stored sources mean what their labels say?
@@ -81,6 +82,8 @@ function provenance(season, week) {
   return {
     // Asked for by week, so the week is part of the request, not an assumption.
     draftsharks: storeWeek(readJson(join(DATA, 'draftsharks', String(season), 'ppr.json')), week),
+    // Filed under the week the site declared serving (/config), not one we asked for.
+    vegas: (() => { const v = readVegas(season, week); return v ? { week: v.week, by: 'source', fetchedAt: v.fetchedAt ?? null, sourceAt: v.generatedAt ?? null } : null; })(),
   };
 }
 
@@ -106,9 +109,11 @@ export async function auditSources({ season, week, scoring = 'PPR' } = {}) {
   const ref = fpReference(season, week, scoring);
   const prov = provenance(season, week);
   const byRef = (key, v, out) => { const f = ref.rows.get(key); if (f && v != null && Number.isFinite(Number(v))) out.push({ pos: f.pos, v: Number(v), ref: f.pts }); };
-  const rows = { draftsharks: [] };
+  const rows = { draftsharks: [], vegas: [] };
 
   for (const [k, v] of draftsharksIndex(season, scoring)) byRef(k, (v.weeks?.[week] ?? v.weeks?.[String(week)])?.proj, rows.draftsharks);
+  // Complete markets only: a TD-price-only projection is low by design, not by units.
+  for (const r of Object.values(readVegas(season, week)?.players || {})) if (r.complete) byRef(nameKey(r.n, r.p), scoreLine(r, scoring), rows.vegas);
 
   const results = {};
   for (const [name, r] of Object.entries(rows)) {

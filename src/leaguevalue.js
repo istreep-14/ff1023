@@ -22,6 +22,17 @@
  *   2. Points. The projection sources' rest-of-season totals, in this
  *      league's scoring format, sorted per position, give the points the k-th
  *      best player at a position scores. The consensus k-th player gets those.
+ *      With `games` (rest of season), the curve is PER GAME instead — each
+ *      projection is read by its per-game rate (`rate`), ranked and curved on
+ *      that — and the k-th player's points are that rate times HIS OWN games
+ *      left. A total curve handed RB12 the twelfth-best total whether or not
+ *      his bye was still to come, so a player with 11 games left got the
+ *      points of one with 12, and the agreed ROS points simply mirrored the
+ *      rank. Replacement is then a per-game rate too, and value is (rate −
+ *      replacement) × games: a bye week is a week the replacement plays.
+ *      The position rank shown is then re-read off the totals (and, in
+ *      lvValues, off the value), so a rank never sits beside a smaller number
+ *      than the rank after it.
  *   3. Replacement. Every team's lineup is filled league-wide (fixed slots,
  *      then flex from narrowest to widest, by points — so a superflex slot
  *      takes quarterbacks when they outscore the alternatives). How deep each
@@ -64,7 +75,7 @@ export const LV_REPLACEMENT_BLEND = 0.5;
 function lvSignalRanks(players, signal, positions = LV_POSITIONS) {
   const ranks = new Map(), depth = {};
   for (const pos of positions) {
-    const scored = players.filter((p) => p.pos === pos).map((p) => ({ id: p.id, v: signal.score(p.row) }))
+    const scored = players.filter((p) => p.pos === pos).map((p) => ({ id: p.id, v: lvRead(signal, p.row) }))
       .filter((x) => x.v != null && Number.isFinite(Number(x.v)))
       .sort((a, b) => b.v - a.v);
     scored.forEach((x, i) => ranks.set(x.id, i + 1));
@@ -73,11 +84,14 @@ function lvSignalRanks(players, signal, positions = LV_POSITIONS) {
   return { ranks, depth };
 }
 
+/** A signal's number for a row: its per-game rate when the window is priced per game, else its score. */
+const lvRead = (signal, row) => (signal.perGame ? signal.rate(row) : signal.score(row));
+
 /** Points the k-th best player at a position scores, averaged over the projection sources that reach k. */
 function lvCurves(players, pointSignals, positions = LV_POSITIONS) {
   const curves = {};
   for (const pos of positions) {
-    const lists = pointSignals.map((s) => players.filter((p) => p.pos === pos).map((p) => s.score(p.row))
+    const lists = pointSignals.map((s) => players.filter((p) => p.pos === pos).map((p) => lvRead(s, p.row))
       .filter((v) => v != null && Number.isFinite(Number(v))).map(Number).sort((a, b) => b - a)).filter((l) => l.length);
     const n = Math.max(0, ...lists.map((l) => l.length));
     const curve = [];
@@ -153,21 +167,23 @@ export function lvDemand(slots, teams, benchSpots, supply, actual = null) {
  * Returns { players: Map(id -> { posRank, consensus, points, n, spread, inputs }),
  * curves, signals }.
  */
-export function lvConsensus(rows, signals, positions = LV_POSITIONS) {
-  const { players, curves, signals: used } = lvOrder(rows, signals, positions);
+export function lvConsensus(rows, signals, positions = LV_POSITIONS, { games = null } = {}) {
+  const { players, curves, signals: used } = lvOrder(rows, signals, positions, games);
   return {
     players: new Map(players.filter((p) => p.posRank != null).map((p) => [p.id, {
-      posRank: p.posRank, consensus: p.consensus, points: p.points, n: p.n, spread: p.spread, inputs: p.inputs,
+      posRank: p.posRank, consensus: p.consensus, points: p.points, rate: p.rate, games: p.games, n: p.n, spread: p.spread, inputs: p.inputs,
     }])),
     curves,
+    perGame: !!games,
     signals: used,
   };
 }
 
 /** lvConsensus's working: every player with its inputs, consensus, position rank and points. */
-function lvOrder(rows, signals, positions = LV_POSITIONS) {
+function lvOrder(rows, signals, positions = LV_POSITIONS, games = null) {
   const players = rows.filter((r) => positions.includes(r.p)).map((r) => ({ id: r.i, pos: r.p, row: r }));
-  const live = signals.map((s) => ({ ...s, ...lvSignalRanks(players, s, positions) })).filter((s) => s.ranks.size);
+  const live = signals.map((s) => ({ ...s, perGame: !!(games && s.points && s.rate) }))
+    .map((s) => ({ ...s, ...lvSignalRanks(players, s, positions) })).filter((s) => s.ranks.size);
   const total = live.reduce((n, s) => n + (s.weight ?? 1), 0) || 1;
   for (const s of live) s.w = (s.weight ?? 1) / total;
 
@@ -195,17 +211,30 @@ function lvOrder(rows, signals, positions = LV_POSITIONS) {
 
   for (const pos of positions) {
     const ranked = players.filter((p) => p.pos === pos && p.consensus != null && p.n > 0).sort((a, b) => a.consensus - b.consensus || a.id - b.id);
-    ranked.forEach((p, i) => { p.posRank = i + 1; p.points = curves[pos].length ? lvAt(curves[pos], i + 1) : null; });
+    ranked.forEach((p, i) => {
+      p.rateRank = i + 1;
+      p.rate = curves[pos].length ? lvAt(curves[pos], i + 1) : null;
+      p.games = games ? games(p.row) ?? null : null;
+      p.points = p.rate == null ? null : !games ? p.rate : p.games == null ? null : Math.round(p.rate * p.games * 10) / 10;
+    });
+    // Rest of season the position rank is the order of the totals shown beside
+    // it: ranked per game, RB2 with a bye still to come showed fewer points
+    // (227.2) than RB3 (235.8).
+    const byTotal = games
+      ? ranked.slice().sort((a, b) => (b.points ?? -Infinity) - (a.points ?? -Infinity) || a.rateRank - b.rateRank)
+      : ranked;
+    byTotal.forEach((p, i) => { p.posRank = i + 1; });
   }
   return { players, curves, signals: live.map((s) => ({ id: s.id, label: s.label, points: !!s.points, weight: s.w })) };
 }
 
-export function lvValues(rows, signals, { teams, slots, benchSpots, rostered: actual = null } = {}) {
-  const agreed = lvOrder(rows, signals);
+export function lvValues(rows, signals, { teams, slots, benchSpots, rostered: actual = null, games = null } = {}) {
+  const agreed = lvOrder(rows, signals, LV_POSITIONS, games);
   const { curves, players } = agreed;
+  // Who starts is a per-week question, so the supply is read off the curve, not off totals that differ by byes.
   const supply = {};
   for (const pos of LV_POSITIONS) {
-    supply[pos] = players.filter((p) => p.pos === pos && p.posRank != null).sort((a, b) => a.posRank - b.posRank).map((p) => p.points);
+    supply[pos] = players.filter((p) => p.pos === pos && p.rateRank != null).sort((a, b) => a.rateRank - b.rateRank).map((p) => p.rate);
   }
   const { starters, rostered } = lvDemand(slots, teams, benchSpots, supply, actual);
   const replacement = {}, lastStarter = {}, waiver = {};
@@ -217,7 +246,19 @@ export function lvValues(rows, signals, { teams, slots, benchSpots, rostered: ac
   }
 
   const valued = players.filter((p) => p.posRank != null);
-  for (const p of valued) p.value = replacement[p.pos] == null ? null : Math.max(0, p.points - replacement[p.pos]);
+  for (const p of valued) {
+    p.replacement = replacement[p.pos] == null ? null : games ? (p.games == null ? null : replacement[p.pos] * p.games) : replacement[p.pos];
+    p.value = p.replacement == null || p.points == null ? null : Math.max(0, p.points - p.replacement);
+  }
+  // In a league the position rank is the order of the value beside it. Per
+  // game, value is (rate − replacement) × games, which can order two players
+  // differently from their totals (a bye still to come costs a replacement's
+  // week): RB3 was worth 153 to RB2's 151.
+  for (const pos of LV_POSITIONS) {
+    valued.filter((p) => p.pos === pos)
+      .sort((a, b) => (b.value ?? -1) - (a.value ?? -1) || (b.points ?? -Infinity) - (a.points ?? -Infinity) || a.posRank - b.posRank)
+      .forEach((p, i) => { p.posRank = i + 1; });
+  }
   const top = Math.max(0, ...valued.map((p) => p.value ?? 0)) || 1;
   valued.sort((a, b) => (b.value ?? -1) - (a.value ?? -1) || a.consensus - b.consensus);
   valued.forEach((p, i) => {
@@ -227,9 +268,9 @@ export function lvValues(rows, signals, { teams, slots, benchSpots, rostered: ac
 
   const out = new Map(valued.map((p) => [p.id, {
     value: p.value, index: p.index, rank: p.rank, posRank: p.posRank, consensus: p.consensus,
-    points: p.points, replacement: replacement[p.pos], n: p.n, spread: p.spread, inputs: p.inputs,
+    points: p.points, rate: p.rate, games: p.games, replacement: p.replacement, n: p.n, spread: p.spread, inputs: p.inputs,
   }]));
-  return { players: out, replacement, lastStarter, waiver, starters, rostered, curves, signals: agreed.signals };
+  return { players: out, replacement, lastStarter, waiver, starters, rostered, curves, perGame: !!games, signals: agreed.signals };
 }
 
 /**
@@ -250,11 +291,14 @@ export function lvRanksBy(rows, score) {
  * each source keeps its own opinion of where a player ranks, and the league
  * decides what that rank is worth. "ESPN has him RB8" becomes "ESPN's view is
  * worth 61 points here", next to League Value's own number. It is League
- * Value's formula with one source's rank in place of the consensus.
+ * Value's formula with one source's rank in place of the consensus. Priced per
+ * game (`lv.perGame`), it needs the player's `games` left.
  */
-export function lvWorth(lv, pos, rank) {
+export function lvWorth(lv, pos, rank, games = null) {
   const curve = lv?.curves?.[pos];
   const repl = lv?.replacement?.[pos];
   if (!curve || !curve.length || repl == null || rank == null) return null;
-  return Math.max(0, lvAt(curve, rank) - repl);
+  const perGame = Math.max(0, lvAt(curve, rank) - repl);
+  if (!lv.perGame) return perGame;
+  return games == null ? null : perGame * games;
 }

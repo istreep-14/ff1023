@@ -9,15 +9,15 @@
       "team_id": "ARI",
       "filename": "arizona-defense.php",
       "games": 6,
-      "points": 23,
-      "average": 3.8,
+      "points": 24,
+      "average": 4,
       "weeks": {
         "1": 10,
         "2": 2,
         "3": -2,
         "4": 9,
         "5": -1,
-        "6": 5
+        "6": 6
       }
     },
     {
@@ -6213,7 +6213,7 @@
       "player_id": 23049,
       "player_name": "Kevin Austin Jr.",
       "position_id": "WR",
-      "team_id": "NO",
+      "team_id": "FA",
       "filename": "kevin-austin.php",
       "games": 4,
       "points": 1.7,

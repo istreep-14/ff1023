@@ -77,14 +77,13 @@ Pick by the data's shape. When two fit, take the one higher in this list.
 - The card **hugs** its columns: a column's `w` is its floor, not a clip
   (`table.fixed` is auto layout), so a one-row header is never cut; frozen
   columns pin their width so the next one's offset is known.
-- Default density (38px); zebra off; row hover on; owner tints (§3.9).
+- Comfortable view by default (§3.9); zebra off; row hover on; owner tints (§3.9).
 - **Sort is declared, not parsed**: each column gives `sortValue(row)`;
   blanks always last; the sorted column header is highlighted.
 - Rows render 100 at a time with "Show all N" (no virtualisation needed at
   our sizes, ≤ ~800 rows); the panel header shows `N of M` like the props board.
-- A **density switch** (Compact / Default / Comfy — 32 / 38 / 48px) per grid,
-  remembered per grid (`densitySwitch`, which re-classes the table in place);
-  Trade Market adds Roomy (64px) and defaults to it (§6).
+- A **view switch** (Comfortable / Compact, §3.9) — one setting for every
+  table, pure CSS on `<html>`; Trade Market's rows stay roomy in both (§6).
 - Optional **heat** columns (see 3.6) and a legend line under the grid.
 - Filter bar above it, in the order from §2.6.
 
@@ -112,6 +111,13 @@ One row component, three variants:
 - `select` — checkbox leading, IR/Q badges after the name, trailing rank
   (Trade Analyzer).
 - `card` — bordered rounded row with 8px gap between rows (trade result).
+
+**Player card** (`playerCard(p, {lines, spark, tab})`, `.pcard`): the one
+card any non-table view of players uses — photo on a grey angled tile, name,
+position pill + team, `[label, value]` lines, an optional area sparkline;
+it opens the player on `tab`. The modal's "Similarly Valued Players" row
+(`tmCard`) is the first user. A new card view builds on it rather than
+drawing its own.
 
 Lists never sort by header (they have none); a list that needs sorting is a
 Table.
@@ -199,7 +205,8 @@ re-valued under `:root[data-theme="light"]`, chosen by the Theme button only.
 | `--row-hover` | `#353E5A` | `#F3F5F9` | hover |
 | `--ink` / `--ink-name` | `#E6E9EF` / `#EEF1F6` | `#262B33` / `#1F242C` | numbers / names |
 | `--ink-3` / `--th-ink` | `#A9B1BF` / `#B9C0CC` | `#868B95` / `#525A67` | secondary line / headers |
-| `--gold` on `--gold-ink` | `#FACD39` on `#16191D` | same | the accent: active chip, YOU, sort arrow (dark) |
+| `--gold` on `--gold-ink` | `#FACD39` on `#16191D` | same | the accent: active chip, sort arrow (dark) |
+| `--row-you` / `--you-ink` | `#24365A` / `#0B1A30` | `#E9F1FD` / `#FFFFFF` | your rows; ink on the blue YOU tag |
 | `--p-qb … --p-ir` | QB `#C8A1FF` RB `#83DCEF` WR `#85DE9E` TE `#FF8AA2` K `#FDB97C` DST `#BDC3CD` BN `#EBEEF4` IR `#FD9891`; FLX `#7FD1D8` | FLX `#A9E6EE` | position and slot badges, ink `#13284A` |
 | `--heat-u2 … --heat-d2` | `#1F5A50 #1C3F43 · #3E2B38 #5E3239` | soft green / soft red | shaded value cells |
 
@@ -215,17 +222,20 @@ the player column is ~330px. The card hugs its table.
 
 | Piece | Spec |
 |---|---|
-| position badge | `.pos`, min-width 24px, 18px tall, radius 5px, 10px/600, `#13284A` on the position colour |
+| position badge | `.pos.mini`, min-width 20px, 13px tall, radius 3px, 8.5px/600, `#13284A` on the position colour — smaller than the name, as in transaction rows |
 | headshot | `.av` 28px round; the NFL logo `.lg` 13px at its bottom-left with a drop shadow; a defense is its logo |
 | name | `.plink` 14px/500; turns link-blue with its row on hover; opens the player card |
-| NFL team | `.tm` 11px/500 secondary |
+| NFL team | `.prt`: the team abbreviation (10px/600 muted, .04em, the Matchup page's team tag) — beside the name in compact; after the position ("QB CAR") on a second line in comfortable, which drops the leading badge |
+| owner | not part of the identity: League Players and Players give it its own `Owner` column (`rosterBadgeCell`) |
 | status | `statusTag`: `.st` 16px tall, 10px/600 — BYE yellow, OUT/IR coral, Q/D amber |
 
 A lineup (`layout:'roster'`) leads with the slot badge (`.pos.slot`: min-width
 28px, 23px tall, radius 6px, 11px/600; flex reads FLX) and keeps a
-`POS - TEAM` line under the name; a starter who cannot play is dimmed. The
-all-players grids lead with a muted overall rank column (`{rank:true}`: the
-row's place under the current sort). A table of one position (`nopos`) drops
+`POS - TEAM` line under the name (his game is the Opp column's: in
+comfortable, kickoff sits under the opponent); a starter who cannot play is dimmed. The
+all-players grids lead with a muted, centred "#" column: the player's own
+overall rank in the pool by the agreed number (`overallRank`), which stays
+put under any filter or sort and sorts the table when clicked. A table of one position (`nopos`) drops
 the badge.
 
 **Ranks** read `RB 6`: position, a space, the number (`fxPosRank`,
@@ -233,19 +243,29 @@ the badge.
 window — `Week` / `Wk rank`, `ROS` / `ROS rank` — with an (i) on the points
 header explaining "Agreed". The opponent column is centred and muted.
 
-**Owner badge** (`fxOwner` → `ownerBadge`, league-wide tables: League
-Players, Values, Waiver Wire): a 20px badge with the team's abbreviation,
-`YOU` in yellow for yours, `FA` green, `W` amber plus the day he clears
-(`Thu`); the full name is on hover. The whole row is tinted by the same
-answer: `tr.you` (warm), `tr.fa` (green), `tr.wv` (amber).
+**Owner column** (`fxOwner` → `ownerTag`, league-wide tables: Players, League
+Players, Values, Waiver Wire): centred, 56px, small muted abbreviation text
+and nothing else, so it stays out of the way. Only the answers that matter
+to you get a fill: `YOU` in blue (`--consensus`), `FA` green, `W` amber plus
+the day he clears (`Thu`). The full name is on hover. The whole row is tinted
+by the same answer: `tr.you` (blue), `tr.fa` (green), `tr.wv` (amber). Every
+column after it is centred, like every number column.
 
 **Toolbar** (`.dg-bar`, above a grid or a lineup): filter chips (`.fchip`,
 28px pills; the active one yellow), a muted count with the sort ("Showing
-100 of 539 players · sorted by Week"), and the density switch.
+100 of 539 players · sorted by Week"), and the view switch.
 
-**Density** (`densitySwitch`): Compact 32px / Default 38px / Comfy 48px
-(Roomy 64px on Trade Market), set as a class on the table, remembered per
-table id under `gd.dg.<id>` (the old `comfortable` reads as Default).
+**Views** (`tableViewSwitch`, `setTableView`): two, ONE setting for every
+table — `data-tv` on `<html>`, remembered under `gd.tv`; any table's switch
+(or the command palette) flips them all. **Comfortable** (default) draws each
+row as a card, like a Matchup page player: no position badge before the
+headshot; under the name the position and team, "QB CAR", both in the team
+abbreviation's type with no team logo (a one-position table drops the
+position). **Compact** is one line per player — position badge, full name
+(13px/600), team abbreviation, status tag — in 30px rows with no headshot or
+team crest (a lineup keeps its slot badge and puts "POS - TEAM" beside the
+name), and two-line number cells on one line. Trade Market's sparkline
+rows stay taller in both (`density:'roomy'`).
 
 **Headers** (`headCell`): sortable columns show dim up/down arrows; the
 sorted column's live arrow is the accent (`--sort-on`: yellow dark, blue
@@ -257,7 +277,7 @@ frozen cell layers it over the card instead of hiding it:
 | State | Look |
 |---|---|
 | hover | `--row-hover` tint; the name turns link blue |
-| yours / FA / waivers | warm / green / amber tint |
+| yours / FA / waivers | blue / green / amber tint |
 | selected | `--row-sel` tint with a 3px blue left edge |
 | expanded | `--row-exp` tint; a detail tray (`playerTray`) opens under it: this week, rest of season, rostered, weekly bars |
 
@@ -337,8 +357,28 @@ a before/after screenshot of every page it touches.
   column appears once someone on the roster has scored. On the Overview the
   roster hugs its table and Injury watch / Being added / Recent moves sit
   beside it, wrapping underneath when there is no room.
-- **League Value is a My Team column** (Overview, Rest of season, Trade
-  value): the same `lvFor` number as the Values page, with its position and
-  league rank underneath and a starters total. FantasyPros points carry
-  their own window's position rank underneath (week rank under the week,
-  ROS rank under ROS).
+- **League Value is a My Team column** (Lineup, Rest of season, Trade
+  value): the same `lvFor` number as the Values page, drawn by the one
+  `lvCols` definition, with its position rank beside it and a starters
+  total. FantasyPros points carry their own window's position rank underneath
+  (week rank under the week, ROS rank under ROS).
+- **My Team's tabs follow the hosts' team page (2026-10-23).** Each tab
+  answers one question, columns left to right: matchup, agreed number, each
+  source, result, worth.
+  - **Lineup** (landing, ESPN/Sleeper's row): Opp · SOS, Proj, Score,
+    Wk rank, ROS rank, League value. The lineup check's START / SIT rides
+    the slot row, not a column. The side rail is Injury watch and Recent
+    moves; the demand board (Sleeper adds) left it (2026-10-23).
+  - **Sources**: the agreed week beside FP pts, ECR, grade and DS pts,
+    floor, ceiling, then Score.
+  - **Rest of season**: ROS rank, ECR, DS, League value, Avg, L3, Bye. The
+    position rank is what it is read by; the season points total is not a
+    column.
+  - **Trade value**: League value, Market value, change, chart, Gap (market
+    position rank minus League Value's).
+  - **Schedule**: ROS rank and the opponent for every week left; the
+    starters row counts byes. Opponents only, never a projection.
+  Old `tab=overview` / `week` / `buzz` links open Lineup, `weeks` opens
+  Schedule. No Buzz tab: adds, drops and start % lag a day and say little
+  about a player already rostered, so My Team does not show them; they stay
+  an opt-in column group on Players.

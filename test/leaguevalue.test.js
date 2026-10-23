@@ -144,3 +144,57 @@ test('the agreed number needs no league: the same order and points League Value 
   const ghost = { i: 777, p: 'WR', proj: null, mkt: null };
   assert.equal(lvConsensus([...rows, ghost], [proj, mkt]).players.get(777), undefined);
 });
+
+test('ROS points are a per-game rate times the player\'s own games left, not the k-th best total', () => {
+  // Two RBs with the same per-game rate; one has his bye still to come.
+  const rows = [
+    { i: 1, p: 'RB', pg: 20, g: 12 },
+    { i: 2, p: 'RB', pg: 18, g: 11 },
+    { i: 3, p: 'RB', pg: 18, g: 12 },
+    { i: 4, p: 'RB', pg: 10, g: 12 },
+  ];
+  const ros = { id: 'ros', label: 'ROS', points: true, score: (r) => r.pg * r.g, rate: (r) => r.pg };
+  const games = (r) => r.g;
+  const a = lvConsensus(rows, [ros], ['RB'], { games });
+  assert.equal(a.players.get(2).points, 198);
+  assert.equal(a.players.get(3).points, 216);
+  // A total curve gave rank k the k-th best total, whatever his games.
+  const old = lvConsensus(rows, [ros], ['RB']);
+  assert.equal(old.players.get(2).points, old.curves.RB[old.players.get(2).posRank - 1]);
+
+  // Value is (rate − replacement rate) × his games: a bye week is a week the replacement plays.
+  const lv = lvValues(rows, [ros], { teams: 1, slots: prSlots(['RB']), benchSpots: 0, rostered: { QB: 0, RB: 2, WR: 0, TE: 0 }, games });
+  assert.equal(lv.perGame, true);
+  const x = lv.players.get(1);
+  assert.equal(x.replacement, lv.replacement.RB * 12);
+  assert.equal(x.value, x.points - x.replacement);
+  assert.equal(lvWorth(lv, 'RB', 1, 11), (20 - lv.replacement.RB) * 11);
+  assert.equal(lvWorth(lv, 'RB', 1, null), null);
+});
+
+test('rest of season the position rank follows the number beside it: the agreed total, and in a league the value', () => {
+  // RB 1 is the better per-game player but has a bye still to come.
+  const rows = [
+    { i: 1, p: 'RB', pg: 20, g: 11 },
+    { i: 2, p: 'RB', pg: 19, g: 12 },
+    { i: 3, p: 'RB', pg: 10, g: 12 },
+    { i: 4, p: 'RB', pg: 5, g: 12 },
+  ];
+  const ros = { id: 'ros', label: 'ROS', points: true, score: (r) => r.pg * r.g, rate: (r) => r.pg };
+  const games = (r) => r.g;
+  // No league: ranked per game, RB1 showed 220 to RB2's 228.
+  const a = lvConsensus(rows, [ros], ['RB'], { games });
+  assert.equal(a.players.get(2).points, 228);
+  assert.equal(a.players.get(2).posRank, 1);
+  assert.equal(a.players.get(1).posRank, 2);
+  // In a league, value is (rate − replacement) × games: 1 is worth more (55 to 48), so 1 is RB1 there.
+  const lv = lvValues(rows, [ros], { teams: 1, slots: prSlots(['RB']), benchSpots: 0, rostered: { QB: 0, RB: 2, WR: 0, TE: 0 }, games });
+  assert.ok(lv.players.get(1).value > lv.players.get(2).value);
+  for (const pos of ['RB']) {
+    const byRank = [...lv.players.values()].filter((x) => x.posRank != null).sort((x, y) => x.posRank - y.posRank);
+    for (let k = 1; k < byRank.length; k++) assert.ok(byRank[k - 1].value >= byRank[k].value, `${pos}${k} is worth at least ${pos}${k + 1}`);
+  }
+  assert.equal(lv.players.get(1).posRank, 1);
+  // Who starts is still read off the per-game order.
+  assert.equal(lv.starters.RB, 1);
+});

@@ -23,6 +23,7 @@ export function steps(mods) {
     { name: 'scrape', label: 'MyPlaybook leagues + rosters', run: mods.scrape },
     { name: 'fp', label: 'FantasyPros rankings, projections, news', run: mods.fp },
     { name: 'draftsharks', label: 'Draft Sharks current week + ROS', run: mods.draftsharks },
+    { name: 'vegas', label: 'VegasEdge current week: props-implied projections + spread', run: mods.vegas },
     { name: 'trade', label: 'FantasyPros trade market values', run: mods.trade },
     { name: 'ddplayers', label: 'Dynasty Daddy player data (ESPN/FanDuel/FantasyGuys ROS ranks)', run: mods.ddplayers },
     { name: 'schedule', label: 'NFL opponent schedule (weeks not yet stored)', run: mods.schedule },
@@ -45,7 +46,7 @@ export function steps(mods) {
 
 /** Named groups the Sync page and `--only` both understand. */
 export const PRESETS = {
-  live: 'trend,buzz,matchups,actuals,draftsharks',
+  live: 'trend,buzz,matchups,actuals,draftsharks,vegas',
   // Everything League Value is built from: rest-of-season projections and ranks.
   projections: 'fp,draftsharks,ddplayers',
   leagues: 'scrape,leaguedetail,ddleague,matchups',
@@ -59,12 +60,12 @@ export const PRESETS = {
  */
 export async function pipelineMods({ all = false, scorings = null, days = 2 } = {}) {
   const [
-    { scrape }, { fpSync }, { dsSync }, { tradeSync }, { ddPlayersSync, ddLeagueSync }, { scheduleSync }, { buzzSync }, { trendSync },
+    { scrape }, { fpSync }, { dsSync }, { vegasSync }, { tradeSync }, { ddPlayersSync, ddLeagueSync }, { scheduleSync }, { buzzSync }, { trendSync },
     { syncLeagueDetail, backfillLeagueDetail }, { matchupsSync }, { syncActuals },
     { resolveLeagues }, { applyFilters }, { runEnrich }, { buildDashboard }, { auditSources, formatAudit },
     { readFileSync, existsSync }, { join }, { DATA },
   ] = await Promise.all([
-    import('./scrape.js'), import('./fpsync.js'), import('./draftsharks.js'), import('./trademarket.js'), import('./dynastydaddy.js'),
+    import('./scrape.js'), import('./fpsync.js'), import('./draftsharks.js'), import('./vegas.js'), import('./trademarket.js'), import('./dynastydaddy.js'),
     import('./schedule.js'), import('./buzz.js'), import('./sleepertrend.js'), import('./leaguedata.js'),
     import('./matchups.js'), import('./actuals.js'), import('./fantasypros.js'), import('./leaguestate.js'),
     import('./enrich.js'), import('./dashboard.js'), import('./sourceaudit.js'),
@@ -79,6 +80,7 @@ export async function pipelineMods({ all = false, scorings = null, days = 2 } = 
     scrape: ({ log }) => scrape({ all, log }),
     fp: ({ season, week, log }) => fpSync({ season, week, scorings, log }),
     draftsharks: ({ season, week, log }) => dsSync({ season, week, scorings, log }),
+    vegas: ({ season, week, log }) => vegasSync({ season, week, scorings, log }),
     trade: ({ season, week, log }) => tradeSync({ season, week, scorings, log }),
     ddplayers: ({ season, week, log }) => ddPlayersSync({ season, week, log }),
     ddleague: ({ season, week, log }) => ddLeagueSync({ season, week, leagues: scraped(), log }),

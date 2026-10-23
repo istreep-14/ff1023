@@ -18,6 +18,7 @@ const BY_SITE = {
   draftsharks: { ds: { wk: 16, rk: 4, prk: 2, floor: 10, ceiling: 24, d3: 17, cons: 15, tier: 1, opp: 'BUF', sos: 3, st: { rush_yds: 80 },
     ros: 190, rosPrk: 3, rosFloor: 9, rosCeiling: 25, rosD3: 18, rosCons: 16, rosG: 10, rosTier: 1, rosSt: { rush_yds: 75 }, val: 90, dv: 2, mkt: 85, inj: 30 } },
   dd: { dd: { age: 25, adp: 8, own: 99, st: 90, inj: null, r: [3, 4, 5] } },
+  vegas: { vg: { wk: 18.2, prk: 3, ok: true, miss: null, vol: 'High Floor', fl: 9, md: 17.5, ce: 31, boom: 0.25, bust: 0.12, sk: 0.15, ds: 'ok', st: { rushYds: 80, recYds: 20, rec: 3, tds: 0.8 } } },
   yahoo: { sig: { ya: 100, yd: 20, yn: 80, yc: 5, yr: 98, yrc: 1, ys: 90, nt: 'Sun 1:00 pm @ Buf' } },
   sleeper: { sig: { a: 3000, d: 100, r: 40, v: 1.4 }, act: { 1: 20, 2: 14 } },
   schedule: { opp: '@BUF', bye: 8, sch: { bye: 8, opp: 'BUF', home: false } },

@@ -1,5 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { mergeTeams, applyToLeague, emptyLeague, ABBR_MAX } from '../src/overrides.js';
 import { rankInSource, posRankNumber } from '../src/sourcetables.js';
 
@@ -41,6 +42,24 @@ test('applyToLeague puts the abbreviation on the team and keeps the scraped name
   assert.equal(league.teams[0].nameScraped, 'Host Name');
   assert.equal(league.teams[0].abbreviation, 'FUEL');
   assert.equal(league.teams[1].abbreviation, undefined);
+});
+
+/**
+ * Once a team nickname is on disk (league:import, or a save), the build ships
+ * the nickname as `name` and the host's as `nameScraped`. The standings
+ * subtext read `t.name`, so it repeated the nickname and the real team name
+ * was gone from the page.
+ */
+test('the page shows the host team name under a nickname that came from disk', () => {
+  const template = readFileSync(new URL('../src/dashboard.template.html', import.meta.url), 'utf8');
+  const line = (name) => template.match(new RegExp(`^const ${name} = .*$`, 'm'))[0];
+  const ovFor = () => ({ teams: { 7: { nickname: 'Indy FUEL' } } });
+  const { teamHostName, teamLabel } = new Function('ovFor', `${line('teamHostName')}\n${line('teamLabel')}\nreturn { teamHostName, teamLabel };`)(ovFor);
+  const t = { id: 7, name: 'Indy FUEL', nameScraped: 'Host Name' };
+  assert.equal(teamLabel({}, t), 'Indy FUEL');
+  assert.equal(teamHostName(t), 'Host Name');
+  assert.equal(teamHostName({ id: 8, name: 'Untouched', nameScraped: null }), 'Untouched');
+  assert.match(template, /nickname \? teamHostName\(t\) : null, dt\?\.owner/);
 });
 
 test('a cleared abbreviation is not applied', () => {

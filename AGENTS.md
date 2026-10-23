@@ -13,13 +13,17 @@ A zero-dependency Node 20+ (ESM) tool called **ff091126** that:
    MyPlaybook (the user's own leagues on ESPN/Yahoo/Sleeper), FantasyPros
    public pages + API v2 (current-week + rest-of-season rankings/projections
    only — no other weeks), Draft Sharks (current-week + rest-of-season only),
+   VegasEdge (current week only: sportsbook-props projections re-scored here
+   from the stat line, plus its simulated p10–p90 spread, boom/bust and skew;
+   brought back 2026-10-23 for the spread, shown beside the agreed number and
+   never counted in it),
    the ESPN NFL schedule, two demand signals (Yahoo BuzzIndex, Sleeper
    trending) that are not projections, and Dynasty Daddy (one request for its
    player rows — ids, ADP and the ESPN/FanDuel/FantasyGuys ROS ranks — plus
    each Sleeper/ESPN league's full schedule). Dynasty Daddy's ~20 trade-value
    markets were fetched once and deliberately dropped: a market value is a
    price already shaped for someone else's league, and pricing for each
-   league is League Value's job. Other sources (Vegas, WinWithOdds,
+   league is League Value's job. Other sources (WinWithOdds,
    First Down Studio, FanDuel, Sleeper/Yahoo weekly projections) and the
    cross-source "consensus" blend were deliberately removed — see git history
    if you need to understand why.
@@ -86,14 +90,17 @@ data/latest.json  ───────────────►  fetch steps 
 - **No consensus, no cross-source blending — with ONE sanctioned method.**
   Each source (FantasyPros, Draft Sharks, each expert ROS rank) is shown
   as its own number, current week + rest of season only. Do not add per-week
-  data beyond the current week. The exception is **League Value**
+  data beyond the current week (My Team's Schedule tab lists the opponents
+  for the weeks left: schedule, never a projection). The exception is **League Value**
   (`src/leaguevalue.js`), asked for explicitly: it combines sources, but only
   their *within-position order* (ranks, never values — each source's values
   assume a different league), then prices that order with this league's own
   projection curve and replacement level. The same method, without the
   league's replacement level (`lvConsensus`), is the **agreed** week and ROS
   number every player table shows (position rank + points), asked for
-  explicitly. Inputs are FantasyPros and Draft Sharks only, ONE vote per site
+  explicitly. Rest of season the position rank is the order of the totals
+  (per-game rate × games left), and with a league open it is League Value's
+  order, so ROS rank, Value and the "#" overall rank never disagree. Inputs are FantasyPros and Draft Sharks only, ONE vote per site
   split across that site's signals (`src/valuescale.js` `vsSignals`); market
   trade values are not inputs, and ESPN/FanDuel/FantasyGuys ranks are shown
   for comparison, never counted. It is always shown beside the
@@ -145,6 +152,7 @@ data/latest.json  ───────────────►  fetch steps 
 | `src/sourcefeeds.js` | pure logic, inlined into the page: the Sources pages — one page per site, one tab per file that site gives us (FantasyPros week/projections/ROS/trade/points/news, Draft Sharks boards and stat lines, Dynasty Daddy player data, Yahoo buzz, Sleeper trending + actuals, ESPN schedule), each read off the universe rows with its file path and ledger clock |
 | `src/valuescale.js` | pure logic, inlined into the page: the week and ROS sources a row answers for — FantasyPros and Draft Sharks as inputs (one vote per site, `vsSignals`), ESPN/FanDuel/FantasyGuys ROS ranks for comparison only — feeding the agreed numbers, League Value and the Values/Power Rankings columns. The page puts them on one axis with leaguevalue.js `lvWorth` (a source's position rank, priced for the league) |
 | `src/fpsync.js`, `src/scrapefp.js`, `src/fpapi.js`, `src/draftsharks.js` | the two projection/ranking sources |
+| `src/vegas.js` | VegasEdge (needs `VEGAS_TOKEN`): this week's QB + flex boards and the boom/bust batch, three requests a sync. Points are scored from the stat line (`scoreLine`) because the site's own figure follows the account's saved scoring |
 | `src/leaguestate.js` | league on/off state + the account's full league directory |
 | `src/buzz.js`, `src/sleepertrend.js` | demand signals (not projections) |
 | `src/actuals.js` | weekly fantasy points for every player who played (Sleeper stats). Not a projection. The page uses these when a matchup lineup has no score |
